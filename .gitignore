@@ -2,9 +2,6 @@
 *.out
 *.class
 
-# Lab Documents of MCA Sem 2 #
-MCA/Sem 2/Docs/
-
 # any local backups #
 bkp/
 
@@ -14,6 +11,7 @@ out/
 # other folders
 Docs/
 others/
+BCA/
 
 # any document files #
 *.doc
