@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>--</title>
+		<style>
+			body {
+				background-color: black;
+				vertical-align: middle;
+				text-align: center;
+			}
+			
+			.orbit {
+				// background-color: white;
+				width: 550px;
+				height: 550px;
+				border: 2px solid white;
+				border-radius: 50%;
+			}
+			
+			.moon {
+				background-color: white;
+				width: 50px;
+				height: 50px;
+				// border: 2px solid white;
+				border-radius: 50%;
+				animation-name: orbit;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+			
+			@keyframes orbit {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(-360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="orbit"></div>
+		<div class="moon"></div>
+	</body>
+</html>

@@ -1,0 +1,79 @@
+#!/bin/bash
+
+if [ $# != 1 ]; then
+	echo Usage: s \<program-name\>
+	return
+fi	
+
+if [ "$*" == "-r" ]; then
+	echo Resetting...
+
+	unset src_fname
+	unset src
+	unset compiler	
+	unset prg_name
+	unset out
+	unset dir_struct
+
+	unalias r
+	unalias b
+	unalias f
+	unalias e
+	unalias sd
+	unalias s 
+
+else
+
+	echo Setting...
+
+	src_fname=$1
+
+	ext=`echo $src_fname | tr "." "\n" | tail -1 | tr '[:upper:]' '[:lower:]'`	
+	# printf "  [ext='%s'] \n" $ext
+
+	if [ "$ext" == "c" ]; then
+		compiler="gcc"
+	elif [ "$ext" == "cpp" ]; then
+		compiler="g++"
+	else 
+		printf "Unsupported file extension found (%s)! \n" "$ext"
+		return
+	fi
+
+	prg_name=`echo $src_fname | tr "/" "\n" | tail -1 | tr "." "\n" | head -1`
+	# printf "  [prg_name='%s'] \n" $prg_name	
+
+	prg_name_len=`expr ${#prg_name} + ${#ext} + 1`
+	# printf "  [src filename='%s' (len=%d)] \n" $prg_name.$ext $prg_name_len
+
+	dir_struct=${src_fname:0:`expr ${#src_fname} - $prg_name_len`}
+	# printf "  [dir_struct='%s'] \n" $dir_struct
+
+	if [ ! -d out/$dir_struct ]; then
+		mkdir -vp out/$dir_struct
+	fi
+
+	if [ ! -d src/$dir_struct ]; then
+		mkdir -vp src/$dir_struct
+	fi
+
+	if [ ! -f src/"$src_fname" ]; then
+		touch src/"$src_fname"
+		echo touch: "created new file  'src/"$src_fname"'"
+	fi
+
+	editor='subl'
+
+	src=src/"$src_fname"
+	out=out/"$dir_struct""$prg_name".out
+
+	alias b='$compiler "$src" -o "$out"'
+	alias r='b >& /dev/null; if [ $? != 0 ]; then echo -e "\033[0;31m [Compilation failed] \033[0m" ; else "$out"; fi'
+	alias f='cat > "$src"'
+	alias e='$editor "$src"'
+	alias sd='clear; cat -n "$src"; echo'
+	alias s='clear; cat "$src"; echo'
+
+fi
+
+echo [done]

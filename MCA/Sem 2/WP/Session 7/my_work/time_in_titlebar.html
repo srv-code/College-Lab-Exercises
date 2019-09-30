@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Time in status bar</title>
+        <script>
+            var titlebar, intervalID;
+            console.log('init: titlebar=%o', titlebar);
+
+            window.onload = function() {
+                titlebar = document.getElementsByTagName('title')[0];
+                intervalID = setInterval(function() {
+                    titlebar.innerText = new Date().toLocaleTimeString();
+                }, 1000);
+                console.log('window.onload(): titlebar=%o', titlebar);
+                console.log('setIInterval() called');
+            };
+
+            function stopTimer() {
+                console.log('stopTimer(): titlebar=%o', titlebar);
+                clearInterval(intervalID);
+                console.log('clearInterval(%d) called', intervalID);
+                titlebar.innerText = '-----';
+            }
+        </script>
+    </head>
+    <body style="text-align: center; padding-top: 50px;">
+        <input type="button" value="Stop Timer" onclick="stopTimer();" />
+    </body>
+</html>

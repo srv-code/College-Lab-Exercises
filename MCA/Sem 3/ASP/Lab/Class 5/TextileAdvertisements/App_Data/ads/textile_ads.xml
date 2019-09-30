@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<NavigateUrl>www.google.com</NavigateUrl>
+		<AlternateText>Google</AlternateText>
+		<ImageUrl>~/images/ads/google.png</ImageUrl>
+		<Impressions>100</Impressions>
+		<Keyword>KeyG</Keyword>
+		<Height>100</Height>
+		<Width>200</Width>
+	</Ad>
+
+	<Ad>
+		<NavigateUrl>www.galaxy.com</NavigateUrl>
+		<AlternateText>Galaxy</AlternateText>
+		<ImageUrl>~/images/ads/galaxy.png</ImageUrl>
+		<Impressions>50</Impressions>
+		<Keyword>KeyG</Keyword>
+		<Height>100</Height>
+		<Width>200</Width>
+	</Ad>
+
+	<Ad>
+		<NavigateUrl>www.google.com</NavigateUrl>
+		<AlternateText>Google</AlternateText>
+		<ImageUrl>~/images/ads/google</ImageUrl>
+		<Impressions>100</Impressions>
+		<Keyword>G</Keyword>
+		<Height>100</Height>
+		<Width>200</Width>
+	</Ad>
+
+	<Ad>
+		<NavigateUrl>www.google.com</NavigateUrl>
+		<AlternateText>Google</AlternateText>
+		<ImageUrl>~/images/ads/google</ImageUrl>
+		<Impressions>100</Impressions>
+		<Keyword>G</Keyword>
+		<Height>100</Height>
+		<Width>200</Width>
+	</Ad>
+</Advertisements>

@@ -1,0 +1,88 @@
+a) Case- Adding items:
+	:: Menu ::
+	  1  Add item
+	  2  Update item
+	  3  Delete item
+	  4  Display all items
+	  5  Exit
+	Choice:  1
+	
+	Input item details:
+	  Name:  Bread
+	  Unit price:  23.32
+	  Quantity in hand:  5
+	  Item code:  1
+	Item successfully added!
+
+
+	:: Menu ::
+	  1  Add item
+	  2  Update item
+	  3  Delete item
+	  4  Display all items
+	  5  Exit
+	Choice:  1
+	Input item details:
+	  Name:  ButterM
+	  Unit price:  15.66
+	  Quantity in hand:  2
+	  Item code:  2
+	Item successfully added!
+
+
+b) Case- Updating items: 
+	:: Menu ::
+	  1  Add item
+	  2  Update item
+	  3  Delete item
+	  4  Display all items
+	  5  Exit
+	Choice:  2
+	
+	Enter item code:  2
+	Update item details (code=2):
+	  Name:  ButterN
+	  Unit price:  12.99
+	  Quantity in hand:  1
+	Item successfully updated!
+	
+
+c) Case- Deleting items:
+	:: Menu ::
+	  1  Add item
+	  2  Update item
+	  3  Delete item
+	  4  Display all items
+	  5  Exit
+	Choice:  3
+	Enter item code:  1
+	Item successfully deleted!
+	
+
+d) Case- Displaying all items:
+	:: Menu ::
+	  1  Add item
+	  2  Update item
+	  3  Delete item
+	  4  Display all items
+	  5  Exit
+	Choice:  4
+
+	Items in database:
+	Total item entries:  1
+	Item details:
+	  Code:  2
+	  Name:  ButterN
+	  Price:  12.99
+	  Quantity in hand:  1
+	  
+	  
+e) Case- Exiting program:
+	:: Menu ::
+	  1  Add item
+	  2  Update item
+	  3  Delete item
+	  4  Display all items
+	  5  Exit
+	Choice:  5
+	[Programs exits]

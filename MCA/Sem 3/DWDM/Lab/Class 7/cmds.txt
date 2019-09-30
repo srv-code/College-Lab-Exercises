@@ -1,0 +1,8 @@
+Syntax, example:
+	itemFrequencyPlot()
+	apriori()
+	inspect()
+	sort()
+	itemFrequency()
+	read.transactions
+	factor()

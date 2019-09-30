@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<NavigateUrl>www.textile1.com</NavigateUrl>
+		<AlternateText>Textile 1</AlternateText>
+		<ImageUrl>~/images/ads/textile1.png</ImageUrl>
+		<Impressions>100</Impressions>
+		<Keyword>Industry1</Keyword>
+		<Height>100</Height>
+		<Width>200</Width>
+	</Ad>
+	<Ad>
+		<NavigateUrl>www.textile2.com</NavigateUrl>
+		<AlternateText>Textile 2</AlternateText>
+		<ImageUrl>~/images/ads/textile2.png</ImageUrl>
+		<Impressions>50</Impressions>
+		<Keyword>Industry1</Keyword>
+		<Height>100</Height>
+		<Width>200</Width>
+	</Ad>
+	
+	<Ad>
+		<NavigateUrl>www.textile3.com</NavigateUrl>
+		<AlternateText>Textile 3</AlternateText>
+		<ImageUrl>~/images/ads/textile3.png</ImageUrl>
+		<Impressions>100</Impressions>
+		<Keyword>Industry2</Keyword>
+		<Height>100</Height>
+		<Width>200</Width>
+	</Ad>
+	<Ad>
+		<NavigateUrl>www.textile4.com</NavigateUrl>
+		<AlternateText>Textile 4</AlternateText>
+		<ImageUrl>~/images/ads/textile4.png</ImageUrl>
+		<Impressions>70</Impressions>
+		<Keyword>Industry2</Keyword>
+		<Height>100</Height>
+		<Width>200</Width>
+	</Ad>
+	<Ad>
+		<NavigateUrl>www.textile5.com</NavigateUrl>
+		<AlternateText>Textile 5</AlternateText>
+		<ImageUrl>~/images/ads/textile5.png</ImageUrl>
+		<Impressions>10</Impressions>
+		<Keyword>Industry2</Keyword>
+		<Height>100</Height>
+		<Width>200</Width>
+	</Ad>
+</Advertisements>

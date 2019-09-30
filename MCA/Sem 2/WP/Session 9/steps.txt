@@ -1,0 +1,4 @@
+1. Start XAMPP Control Panel 
+2. Start Apache Module
+3. Place web files under: C:\xampp\htdocs\php\ (php is the subfolder here)
+4. Goto this address: http://localhost/php/cookies.php (cookies.php is the name of the file here)

@@ -1,0 +1,111 @@
+<!--Author:Bharat
+//G-mail form
+//Date:18/1/19
+--><!doctype html>
+	<head>
+	  <link rel="icon" href=".\img_title.png" alt="np">
+		<title>
+			Google Registration
+		</title>
+		<style>
+			table{
+				border:1px solid black;padding:20px;border-radius:5px;
+				border-width:2px;
+				}
+				.bottom {text-align:right;font-size:80%;width:428px;}
+				.a{text-align:left;margin-left:325px;}
+			.tble2 {border:0;margin-left:325px;}
+			.one{margin-left:325px;margin-top:120px;}
+			body{
+			     font-family:calibri}
+			.blu {color:blue}
+			.violet{color:purple}
+		</style>
+		 <script type="text/javascript">
+		 function validate(){
+		 var name=document.getElementById("fn").value;
+		   if(name.contains("1"))
+		       alert("Cant contain numbers");
+		 
+            if(document.getElementById("fn").value.length>10)
+			 {return alert("First name can contain only 10 characters");
+			  }
+			 
+			  if(document.getElementById("ln").value.length>10)
+			 {return alert("Last name can contain only 10 characters");
+			 }
+			 var r=document.getElementById("usr").value;
+			  if(!r.endsWith("@gmail.com"))
+			  {
+			   return alert("Enter a valid userName!");
+			   }
+			   
+			   if(document.getElementById("pwsd1").value!=document.getElementById("pwsd2").value)
+			    {
+				  return alert("Password does not match!");
+				 }
+			   
+			   if(document.getElementById("pwsd1").value.length<4 && document.getElementById("pwsd2").value.length<4)
+			     return alert("Enter a strong password!");
+				 
+				 
+				 confirm("Data Entered Successfully!");
+			  
+			 }
+			 
+		 </script>
+	</head>
+	<body>
+		<form>
+		<table class="one">
+			<tr>
+				<td colspan ="2"><a href="google.com"><img src=".\g-logo.jpg"></a></td>
+			</tr>
+			<tr>
+				<td colspan="3" ><h3>Create your Google Account</h3></td>
+			</tr>
+			<tr>
+				<td colspan="1"><input id="fn" type="text" name="firstName" placeholder="First name" required autofocus>
+				<td colspan="1"><input id="ln" type="text" name="lastName" placeholder="Last name" required></td>
+				<td colspan="1" rowspan="7"><img src=".\BasicSideGoogle.png"></td>
+			</tr>
+			<tr >
+				<td colspan="2" ><input id="usr"type="text" name="userName" style="width:99%;"placeholder="Username                                                                          @gmail.com" required></td>
+			</tr>
+			<tr>
+				<td class="blu"><sub>You can use letters, numbers & periods</sub></td>
+			</tr>
+			<tr>
+				<td size="20"class="blu">Use my current email address instead</td>
+			</tr>
+			<tr>
+				<td colspan="1"><input id="pwsd1" type="password" name="passWord1" placeholder="Password"></td>
+				<td colspan="1"><input id="pwsd2" type="password" name="passWord2" placeholder="Confirm"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><sub>Use 8 or more characters with a mix of letters, numbers 
+				symbols<sub></td>
+			</tr>
+			<tr>
+				<td colspan="1" class="violet"><b>Sign in instead</b></td><td colspan="1">
+				   <input id="nxt" type="Button"  method="GET" name="submit" value="Submit" onclick="validate()"></td>
+			<tr>
+			
+		</table>
+		          
+					 
+			<table class="tble2">
+			   <tr class="a">
+					<td><select name="language">
+						<option value="English" Selected>English (United Kingdom)</option>
+						<option value="English(US)">English (United States)</option>
+					</select></td>
+					<td class="bottom"><small>
+					Help &nbsp;&nbsp;&nbsp;Privacy &nbsp;&nbsp;&nbsp;Terms</small>
+					</td>
+                     </tr>					
+					
+					
+		</form>
+	</body>
+			

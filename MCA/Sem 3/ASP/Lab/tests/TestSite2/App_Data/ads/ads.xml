@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<NavigateUrl>www.google.com</NavigateUrl>
+		<ImageUrl>~/images/ads/google.png</ImageUrl>
+		<AlternateText>Go to Google</AlternateText>
+		<Height>200</Height>
+		<Width>200</Width>
+		<Impressions>50</Impressions>
+		<Keyword>G</Keyword>
+	</Ad>
+	<Ad>
+		<NavigateUrl>www.google.com</NavigateUrl>
+		<ImageUrl>~/images/ads/gravity.png</ImageUrl>
+		<AlternateText>Go to Gravity</AlternateText>
+		<Height>200</Height>
+		<Width>200</Width>
+		<Impressions>20</Impressions>
+		<Keyword>G</Keyword>
+	</Ad>
+	<Ad>
+		<NavigateUrl>www.google.com</NavigateUrl>
+		<ImageUrl>~/images/ads/generosity.png</ImageUrl>
+		<AlternateText>Go to Generosity</AlternateText>
+		<Height>200</Height>
+		<Width>200</Width>
+		<Impressions>10</Impressions>
+		<Keyword>G</Keyword>
+	</Ad>
+	<Ad>
+		<NavigateUrl>www.facebook.com</NavigateUrl>
+		<ImageUrl>~/images/ads/facebook.png</ImageUrl>
+		<AlternateText>Go to Facebook</AlternateText>
+		<Height>200</Height>
+		<Width>200</Width>
+		<Impressions>200</Impressions>
+		<Keyword>F</Keyword>
+	</Ad>
+	<Ad>
+		<NavigateUrl>www.facebook.com</NavigateUrl>
+		<ImageUrl>~/images/ads/fiberoptics.png</ImageUrl>
+		<AlternateText>Go to FiberOptics</AlternateText>
+		<Height>200</Height>
+		<Width>200</Width>
+		<Impressions>100</Impressions>
+		<Keyword>F</Keyword>
+	</Ad>
+</Advertisements>

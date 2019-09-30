@@ -1,0 +1,49 @@
+<!--Author:Bharat
+Date:08/02/2019
+Displaying all the boxes-->
+<!Doctype html>
+<html>
+ <head>
+   <title> All Boxes</title>
+   <script type="text/javascript">
+   
+     function displayAlert()
+	        {
+			 alert("This is alert box!");
+			}
+	function displayConfirm()
+	        {
+			 var t=confirm("Confirming,press a button");
+			 if(t==true)
+			   alert("You pressed OK!");
+			 else
+			   alert("You pressed cancel");
+			}
+	function displayPrompt()
+	        {
+			  var x=prompt("Enter any value");
+			  console.log("ghfhfjh" + x);
+			  if(!x)
+			    displayPrompt("Please enter some value");
+				 
+			  else
+			    alert("thank you for entering!");
+			 }
+			 
+			
+	</script>
+	</head>
+	
+	<body>
+	     <h1 style="text-align:center">Different Boxes in HTML</h1>  
+	     <p>click to get alert box</p>
+		 <input type="button" value="here" onclick="displayAlert()">
+	  
+	     <p class="1">click to get confirm box</p>
+		 <input type="button" value="here" onclick="displayConfirm()">
+	  
+	     <p class="2">click to get prompt box</p>
+		 <input type="button" value="here" onclick="displayPrompt()">
+	</body>
+</html>
+	  

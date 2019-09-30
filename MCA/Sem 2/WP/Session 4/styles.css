@@ -1,0 +1,56 @@
+* {
+	font-family: Century Gothic;	
+}
+
+.section { 
+	border-radius: 5px;
+	background-color: lightblue;
+	padding: 10px;
+	margin: 10px;
+	// border: 1px solid black;
+}
+
+body {
+	padding: 15px;
+}
+
+header {
+	width: 97%;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: x-large;	
+}
+
+aside {
+	text-align: left;	
+	float: right;
+	width: 20%;
+}
+
+footer {
+	width: 97%;
+	float: left;
+	font-size: small;
+	text-align: center;
+	vertical-align: center;
+}
+
+nav {
+	font-size: small;
+	float: left;
+	width: 10%;
+}
+
+article {
+	float: left;
+	width: 60%;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;	
+}

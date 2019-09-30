@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Fetch info from XML</title>			
+		<script src="get_xml_info.js" type="text/javascript" language="javascript"></script>		
+	</head>
+	<body>
+		<div>
+			<form id="formInfoFetch" action="" onsubmit="return false;">
+				<table>
+					<tr>
+						<td>Song title</td>
+						<td><input type="text" id="txtTitle" placeholder="Song title" /></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="Search" onclick="fetchInfo();" /></td>
+						<td><input type="reset"  value="Clear" onclick="clearForm();" /></td>
+					</tr>
+				</table>
+				<br>
+				<table>
+					<tr>
+						<td>Result</td>
+						<td id="resultTitle"></td>
+					</tr>
+					<tr>
+						<td>Title</td>
+						<td id="titleInfo"></td>	
+					</tr>
+					<tr>
+						<td>Artist</td>
+						<td id="artistInfo"></td>
+					</tr>
+					<tr>
+						<td>Album</td>
+						<td id="albumInfo"></td>
+					</tr>
+					<tr>
+						<td>Year</td>
+						<td id="yearInfo"></td>
+					</tr>
+				</table>
+			</form>
+		</div>		
+	</body>
+</html>

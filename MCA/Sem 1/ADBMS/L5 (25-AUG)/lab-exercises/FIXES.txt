@@ -1,0 +1,3 @@
+FIXES:
+	* Replace to_char(<date>, <format>) with extract
+	* Replace any arithmetic operations with to_char(<date>, <format>) with hardcoded no of days

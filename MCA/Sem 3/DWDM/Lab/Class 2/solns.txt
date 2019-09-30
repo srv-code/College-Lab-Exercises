@@ -1,0 +1,13 @@
+1.  table(mtcars$cyl)
+2.  summary(mtcars$mpg)
+3.  hist(mtcars$hp)
+4.  boxplot(mtcars$mpg)
+5.  mean(mtcars$wt)
+6.  rownames(mtcars[mtcars$disp==min(mtcars$disp),])
+7.  rownames(mtcars[mtcars$qsec==max(mtcars$qsec),])
+8.  median(mtcars$hp)
+9.  mtcars[mtcars$mpg==max(mtcars$mpg),]
+10. rownames(mtcars[mtcars$mpg==min(mtcars$mpg),])
+11. rownames(mtcars[mtcars$hp==max(mtcars$hp),])
+12. for(g in unique(mtcars$gear)) { print(g); print(mean(mtcars[mtcars$gear==g,1])); }
+13. boxplot(mtcars$mpg~mtcars$am)

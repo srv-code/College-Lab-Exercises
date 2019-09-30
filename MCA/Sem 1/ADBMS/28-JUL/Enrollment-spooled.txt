@@ -1,0 +1,38 @@
+SQL> 
+SQL> 
+SQL> 
+SQL> spool "c:\users\mca\desktop\adbms096\projects\Enrollment-spooled.txt" append
+SQL> 
+SQL> 
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Enrollment.sql"
+Enter value for cno: 
+Enter value for year: 
+old   7: 	constraint enrollment_pk_sid&cno&year primary key (SID, CNo, Year)
+new   7: 	constraint enrollment_pk_sid primary key (SID, CNo, Year)
+
+Table created.
+
+SQL> 
+SQL> 
+SQL> drop table Enrollment
+  2  ;
+
+Table dropped.
+
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Enrollment.sql";
+
+Table created.
+
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Enrollment.sql";
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SID                                       NOT NULL CHAR(9)
+ CNO                                       NOT NULL VARCHAR2(7)
+ YEAR                                      NOT NULL NUMBER(2)
+ GRADE                                              CHAR(2)
+
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Enrollment.sql";
+
+no rows selected
+
+SQL> spool off

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<script type="text/javascript">
+			window.onload = function() {
+				console.log('Javascript loaded at %d', (new Date().getTime()));
+			};
+			
+			/* deprecated */
+			function writeOnBody() {
+				var newPara = document.createElement('p');
+				newPara.appendChild(document.createTextNode('Javascript loaded at ' + (new Date().getTime())));
+				var body = document.getElementsByTagName('body')[0];
+				body.insertBefore(newPara, body.firstChild);
+			};
+			
+			function copyImageSrc(clickedImg) {
+				console.log('clicked on: %o', clickedImg);
+				var smallImages = document.getElementById('divSmallImgs').getElementsByTagName('img');
+				
+				for(var i=0; i<smallImages.length; i++) { // reset css for all smaller img elements
+					smallImages[i].className = 'unclicked';
+					console.log('altered css class of: %o', smallImages[i]);
+				}
+				var bigImg = document.getElementById('imgBig');
+				bigImg.src = clickedImg.src;
+				console.log('altered src of: %o', bigImg);
+				clickedImg.className = 'clicked';
+				console.log('altered css class of: %o', clickedImg);
+			}
+		</script>
+		<style type="text/css">
+			body {
+				text-align: center;
+			}
+			
+			.unclicked {
+				border: 1px solid blue;
+			}
+			
+			#imgSmall1, #imgSmall2, #imgSmall3 {
+				width:  100px;
+				height: 100px;
+			}
+			
+			#imgBig {
+				width:  300px;
+				height: 300px;
+			}
+			
+			.clicked {
+				border: 3px solid red;
+			}
+			
+			div {
+				text-align: center;
+				border: 1px solid lightblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="divSmallImgs">			
+			<img id="imgSmall1" src="img/a.jpg" class="unclicked" onclick="copyImageSrc(this);" />
+			<img id="imgSmall2" src="img/b.jpg" class="unclicked" onclick="copyImageSrc(this);" />
+			<img id="imgSmall3" src="img/c.jpg" class="unclicked" onclick="copyImageSrc(this);" />
+		</div>
+		<div id="divBigImg">
+			<img id="imgBig" alt="big img" class="unclicked" />
+		</div>
+	</body>
+</html>

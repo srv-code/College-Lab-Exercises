@@ -1,0 +1,19 @@
+Questions:
+Using the Northwind dataset create the following reports and visualize using an appropriate plot:
+	What is the total sales for each sales person in categories of products?
+	What is the total sales for each customers in categories of products?
+	Find the top 10 selling products in the company
+	Find the customer's region-wise sale of products in each category
+	Find the total sales of product Boston crab meat customer wise
+	Summarise the percentage sales for each category of product year wise
+	
+Excel features:
+	Sort	
+	Filter 
+	Conditional formatting
+	Charts 
+	WhatIf analysis 
+	Analysis tool pack (download)
+	Sparkline (visualisation)
+	
+Solutions: In the excel file (name: F:\studies\DWDM\Docs\DWDM-AUG2019\Datasets\exports\Northwind\Northwind combined.xlsx) itself

@@ -1,0 +1,6 @@
+Format for R scripts:
+	# function purpose 
+	# author
+	# date
+	# arg list
+	# returns?

@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Registration form</title>
+		<link rel="stylesheet" type="text/css" href="form_styles.css" />
+		<script src="validate_form.js" type="text/javascript" language="javascript"></script>
+	</head>
+	<body>
+		<div id="mainContainer">
+			<form id="formRegistration" method="post" action="" onsubmit="return validateInputFields(this);" >
+			<!-- <form id="formRegistration" method="post" action="" > -->
+				<table>
+					<th colspan="3">
+						Register yourself
+					</th>
+
+					<tr>
+						<td colspan="3" class="separatorRow"></td>
+					</tr>
+
+					<tr>
+						<td>
+							Name:
+						</td>
+						<td>
+							<input type="text" id="txtName" placeholder="Name" />
+						</td>
+						<td>
+							*
+							<img id="nameValidIndicator" class="validIndicator" />
+							<span id="nameErrorMsg" ></span>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							Address:
+						</td>
+						<td>
+							<input type="text" id="txtAddress" placeholder="Address" />
+						</td>
+						<td>
+							*
+							<img id="addressValidIndicator" class="validIndicator" />
+							<span id="addressErrorMsg" ></span>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							Zip Code:
+						</td>
+						<td>
+							<input type="text" id="txtZipCode" placeholder="Zip code" />
+						</td>
+						<td>
+							*
+							<img id="zipcodeValidIndicator" class="validIndicator" />
+							<span id="zipcodeErrorMsg" ></span>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							Country:
+						</td>
+						<td>
+							<select id="dropdownCountry">
+								<option selected>Select</option>
+								<option>India</option>
+								<option>France</option>
+								<option>China</option>
+								<option>United States of America</option>
+							</select>
+						</td>
+						<td>
+							*
+							<img id="countryValidIndicator" class="validIndicator" />
+							<span id="countryErrorMsg" ></span>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							Gender:
+						</td>
+						<td>
+							<input type="radio" name="gender" id="genderMale" value="male" /> 
+								<label for="genderMale" class="subitem">Male</label>
+							<input type="radio" name="gender" id="genderFemale" value="female" /> 
+								<label for="genderFemale" class="subitem">Female</label>
+						</td>
+						<td>
+							*
+							<img id="genderValidIndicator" class="validIndicator" />
+							<span id="genderErrorMsg" ></span>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							Preferences:
+						</td>
+						<td>
+							<input type="checkbox" name="prefColor" id="prefColorRed" value="red" /> 
+								<label for="prefColorRed" class="subitem">Red</label>
+							<input type="checkbox" name="prefColor" id="prefColorGreen" value="green" /> 
+								<label for="prefColorGreen" class="subitem">Green</label>
+							<input type="checkbox" name="prefColor" id="prefColorBlue" value="blue" /> 
+								<label for="prefColorBlue" class="subitem">Blue</label>
+						</td>
+						<td>
+							*
+							<img id="prefValidIndicator" class="validIndicator" />
+							<span id="prefErrorMsg" ></span>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							Email ID:
+						</td>
+						<td>
+							<input type="email" id="txtEmail" placeholder="Email ID" />
+						</td>
+						<td>
+							*
+							<img id="emailValidIndicator" class="validIndicator" />
+							<span id="emailErrorMsg" ></span>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							Phone Number:
+						</td>
+						<td>
+							<input type="tel" id="txtPhoneNo" placeholder="Phone number" />
+						</td>
+						<td>
+							*
+							<img id="phonenoIndicator" class="validIndicator" />
+							<span id="phonenoErrorMsg" ></span>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							Password:
+						</td>
+						<td>
+							<input type="password" id="txtPwd" placeholder="Password" />
+						</td>
+						<td>
+							*
+							<img id="pwdValidIndicator" class="validIndicator" />
+							<span id="pwdErrorMsg" ></span>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							Verify password:
+						</td>
+						<td>
+							<input type="password" id="txtVerifyPwd" placeholder="Verify password" />
+						</td>
+						<td>
+							*
+							<img id="verifyPwdValidIndicator" class="validIndicator" />
+							<span id="verifyPwdErrorMsg" ></span>
+						</td>
+					</tr>
+					
+					<tr>
+						<td colspan="3" class="separatorRow"></td>
+					</tr>
+
+					<tr>
+						<td colspan="3" id="buttonsArea">
+							<!-- <input type="button" value="Submit" onclick="return validateInputFields(document.forms['formRegistration']);" /> -->
+							<input type="submit" value="Submit" />
+							<input type="reset" value="Reset" onclick="clearForm();" />
+							<!-- <input type="reset" value="Reset" onclick="clearInputFields();" /> -->
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

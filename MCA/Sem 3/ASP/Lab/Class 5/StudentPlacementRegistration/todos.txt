@@ -1,0 +1,7 @@
+* Need to add validation?
+* Check different events of Wizard control.
+* Use of ActiveStepIndex?
+* Check insertion with ControlParameter also.
+* Cannot insert dob data as date in DB.
+* Try insertion using ADO.NET also 
+* Need to make use of Page.IsValid ?

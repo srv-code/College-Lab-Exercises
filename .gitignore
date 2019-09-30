@@ -1,0 +1,37 @@
+# Compiled source #
+*.out
+*.class
+
+# Lab Documents of MCA Sem 2 #
+MCA/Sem 2/Docs/
+
+# any local backups #
+bkp/
+
+# any local program outputs #
+out/
+
+# other folders
+Docs/
+others/
+
+# any document files #
+*.doc
+*.docx
+*.odt
+*.pdf
+*.ppt
+*.pptx
+
+# misc #
+*.ini
+Thumbs.db
+ehthumbs.db
+*.zip
+*.rar
+*.7z
+*.tar
+*.jar
+*.gz
+*.log
+# *.xml

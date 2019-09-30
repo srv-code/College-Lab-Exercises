@@ -1,0 +1,26 @@
+Commands:
+	names()
+	seq()
+	letters()
+	help()
+	c()
+	rm()
+	sqrt()
+	length()
+	getwd()
+	setwd()
+	ls()
+	R.version
+	diag(matc)
+	nrow(mata)
+	ncol(matb)
+	dim(mata)<-c(3,3)
+
+Expression:
+	vecx[vecx>3&vecx<6]
+	dim(mata)<-c(3,3)
+	vecx[2:4]
+	vecx[-(2:4)]
+	matb=matrix(mata,3,3)
+	matb=matrix(mata,3,3,byrow=TRUE)
+	mata%*%matb

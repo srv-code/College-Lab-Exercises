@@ -1,0 +1,6 @@
+[Date: 25-Sept]
+1. Find the association b/w gender survival and write down the inference.
+Sol: chisq.test(train$Sex, train$Survivied)
+
+2. Find the association b/w passenger class and survival and write down the inference.
+3. Find the association rules for survive=YES and write down the top 3 rules.

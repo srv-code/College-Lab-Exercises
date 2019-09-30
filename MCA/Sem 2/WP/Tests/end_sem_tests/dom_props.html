@@ -1,0 +1,92 @@
+<html lang="en">
+	<head>
+		<style>
+			p {
+				background-color: lightblue;
+				border: 1px solid blue;
+			}
+
+			div {
+				border: 1px solid yellow; 
+				background-color: yellow;
+			}
+		</style>
+
+		<script>
+			function appendPara() {
+				console.log('appendPara()');
+				var newPara = document.createElement('p');
+				var newText = document.createTextNode('this is new');
+				newPara.appendChild(newText);
+
+				var parent = document.getElementById('div1');
+				parent.appendChild(newPara);
+			}
+
+			function insertBeforePara() {
+				console.log('insertBeforePara()');
+				var newPara = document.createElement('p');
+				var newText = document.createTextNode('This is new text');
+				newPara.appendChild(newText);
+
+				var parent = document.getElementById('div1');
+				var child = document.getElementById('p2');
+
+				parent.insertBefore(newPara, child);
+			}
+
+			function insertAfterPara() {
+				console.log('insertAfterPara()');
+
+				var newPara = document.createElement('p');
+				newPara.appendChild(document.createTextNode('This is new'));
+
+				// document.getElementById('p1').appendChild(newPara);
+
+				document.getElementById('div1')
+					.insertBefore(
+						newPara, document.getElementById('p1').nextSibling);
+			}
+
+			function removePara() {
+				console.log('removePara()');
+				var parent = document.getElementById('div1');
+				var child = document.getElementById('p2');
+
+				parent.removeChild(child);
+			}
+
+			function replacePara() {
+				console.log('replacePara()');
+				var newChild = document.createElement('p');
+				newChild.appendChild(document.createTextNode('This is new'));
+
+				var parent = document.getElementById('div1');
+				var oldChild = document.getElementById('p2');
+
+				parent.replaceChild(newChild, oldChild);
+			}
+
+			function removeAll() {
+				console.log('removeAll()');
+				document.getElementsByTagName('body')[0]
+					.removeChild(
+						document.getElementById('div1'));
+			}
+
+			// window.onload = removeAll;
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			<p id="p1">This is para 1</p>
+			<p id="p2">This is para 2</p>
+		</div>
+
+		<input type="button" value="append" onclick="appendPara();" />
+		<input type="button" value="insert before" onclick="insertBeforePara();" />
+		<input type="button" value="insert after" onclick="insertAfterPara();" />
+		<input type="button" value="remove" onclick="removePara();" />
+		<input type="button" value="replace" onclick="replacePara();" />
+	</body>
+</html>

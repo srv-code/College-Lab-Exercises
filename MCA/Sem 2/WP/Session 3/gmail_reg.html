@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Gmail Registration Form</title>
+		<link rel="icon" href="icon.png" type="image/icon" />
+		<style>
+			* {
+				font-family: "Century Gothic"; 
+				font-size: 12pt;				
+			}
+			
+			/*
+			tr { border: 1px solid green; }
+			td { border: 1px solid green; }
+			table { border: 1px solid green; }
+			*/
+			
+			a {
+				font-color: lightblue;
+				text-decoration: none;
+				font-size: small;
+				font-weight: bold;
+			}
+			
+			#header_lbl { 
+				// font-weight: bold;
+				font-size: large;
+			}
+			
+			#main_form {
+				width: 70%;
+				margin: auto;				
+				padding: 30px;
+				// border: 1px solid blue;
+			}
+			
+			#reg_form {
+				border: 1px solid lightgray; 
+				border-radius: 10px;
+				float:left;
+				width: 100%;
+			}
+			
+			#form_inputs {
+				padding: 20px;
+				//border: 1px solid blue;
+				width: 55%;
+				float: left;
+			}
+			
+			#form_img {		
+                left:50%;				
+				text-align: center;
+				font-size: small;
+				// border: 1px solid blue;
+				width: 40%;
+				float: right;
+			}
+			
+			input {
+				border: 1px solid lightgray;
+				padding: 5px;
+				border-radius: 5px;
+			}
+			
+			#next_btn {
+				padding: 5px 20px 5px 20px;
+				background-color: blue;
+				color: white;
+				font-weight: bold;
+			}
+			
+			// #footer{width:100%; float:left;}
+			
+			.smaller_text {
+				font-size: small;
+			}
+			
+			.separator_row {
+				padding-top: 15px;
+			}
+			
+			.footer_link {
+				text-decoration: none;
+				padding: 10px;
+				color: gray;
+				font-weight: normal;
+				font-size: small;
+			}
+			
+			.footer_dropdown {
+				border-width: 0px;
+				font-size: small;
+				color: gray;
+			}
+		</style>
+	</head>
+		
+	<body>
+		<div id="main_form">
+			<div id="reg_form">
+				<form action="#" method="get">
+					<div id="form_inputs">
+						<table>
+							<tr>
+								<td colspan="2">
+									<img src="icon.png" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<label id="header_lbl">Create your Google Account</label>
+								</td>
+							</tr>
+							<tr><td colspan="2" class="separator_row"></td></tr>
+							<tr><td colspan="2" class="separator_row"></td></tr>
+							<tr>
+								<td>
+									<input type="text" id="first_name" required placeholder="First name" />
+								</td>
+								<td>
+									<input type="text" id="last_name" required placeholder="Last name" />
+								</td>
+							</tr>
+							<tr><td colspan="2" class="separator_row"></td></tr>
+							<tr>
+								<td colspan="2">
+									<input type="text" id="emailid"  style="width: 93%;" required placeholder="Username@gmail.com" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<label class="smaller_text">You can use letters, numbers & periods</label>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<a href="#">Use my current email address instead</a>
+								</td>
+							</tr>
+							<tr><td colspan="2" class="separator_row"></td></tr>
+							<tr>
+								<td>
+									<input type="password" maxlength="40" name="passwd1" placeholder="Password" />
+								</td>
+								<td>
+									<input type="password" maxlength="40" name="passwd2" placeholder="Confirm" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<label class="smaller_text">Use 8 or more characters with a mix of letters, numbers & symbols</label>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									
+								</td>
+							</tr>
+							<tr><td colspan="2" class="separator_row"></td></tr>
+							<tr>
+								<td align="left">
+									<a href="#">Sign in instead</a>
+								</td>
+								
+								<td align="right">
+									<input id="next_btn" type="button" value="Next" />
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div id="form_img">
+						<img src="gschield.png" /> <br/>
+						One account. All of Google working for you.
+					</div>
+					
+				</form>
+			</div>
+			<div id="footer">
+				<table style="width: 100%;">
+					<tr><td colspan="2" style="padding-top: 20px;"></td></tr>
+					<tr>						
+						<td align="left">
+							<select class="footer_dropdown">
+								<option class="footer_dropdown" value="lang_eng_uk">English (United Kingdom)</option>
+								<option class="footer_dropdown" value="lang_eng_us">English (United States)</option>
+								<option class="footer_dropdown" value="lang_eng_in">English (India)</option>
+							</select>
+						</td>
+						<td align="right">
+							<a href="#" class="footer_link" >Help</a>
+							<a href="#" class="footer_link">Privacy</a>
+							<a href="#" class="footer_link" >Terms</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

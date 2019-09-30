@@ -1,0 +1,14 @@
+Steps for execution: 
+
+[Compiling]
+	javac *.java
+
+[Starting RMI Registry]
+	start rmiregistry
+
+[Starting Server]
+	start java ServerMain
+
+[Starting Client]
+	java ClientMain localhost AddServer 5 6
+	java ClientMain 127.0.0.1 AddServer 11 22

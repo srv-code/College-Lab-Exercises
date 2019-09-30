@@ -1,0 +1,30 @@
+SQL> @ "c:\Users\mca\Desktop\ADBMS096\Projects\Employee1-insertRow.sql"
+
+1 row created.
+
+SQL> @ "c:\Users\mca\Desktop\ADBMS096\Projects\Employee1-showAll.sql"
+
+     EMPNO ENAME          SALARY DEPTNO                                         
+---------- ---------- ---------- -------                                        
+       101 Sourav          54000 70                                             
+       102 Rama            40000 50                                             
+       103 Obama           30000 60                                             
+       104 Sourav          54000 70                                             
+       105 Mainak          50000 80                                             
+       109 AAA             50000 80                                             
+       110 BBB             50000 80                                             
+       111 CCC             50000 80                                             
+       113 EEE             50000 80                                             
+
+9 rows selected.
+
+SQL> spool off
+SQL> desc Employee1
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                              NUMBER(3)
+ ENAME                                              VARCHAR2(10)
+ SALARY                                             NUMBER(7,2)
+ DEPTNO                                             VARCHAR2(7)
+
+SQL> spool off

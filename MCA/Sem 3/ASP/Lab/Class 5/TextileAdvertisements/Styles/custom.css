@@ -1,0 +1,15 @@
+﻿body {
+	background-color: silver;
+}
+
+#div_ad1 {
+	width: 40%;
+	float: left;
+	text-align: left;
+}
+
+#div_ad2 {
+	width: 40%;
+	float: right;
+	text-align: right;
+}

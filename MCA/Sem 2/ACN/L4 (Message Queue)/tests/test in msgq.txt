@@ -1,0 +1,3 @@
+* ipcs -q : the queue count
+* fetching IPC_STAT using msgctl
+* ipcs -q : queue count & mem

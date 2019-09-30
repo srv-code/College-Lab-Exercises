@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="student_details.css"?>
+
+<student_details>
+	<title>Student Information in colleges</title>
+
+	<student>
+		<register_number>180970096</register_number>
+		<s_name>Sourav Dey</s_name>
+		<s_department>DCA</s_department>
+		<s_branch>MCA</s_branch>
+		<s_year_join>2018</s_year_join>
+		<s_mail>souravdey@gmail.com</s_mail>
+	</student>
+	
+	<student>
+		<register_number>180970096</register_number>
+		<s_name>Sourav Dey</s_name>
+		<s_department>DCA</s_department>
+		<s_branch>MCA</s_branch>
+		<s_year_join>2018</s_year_join>
+		<s_mail>souravdey@gmail.com</s_mail>
+	</student>
+	
+	<student>
+		<register_number>180970096</register_number>
+		<s_name>Sourav Dey</s_name>
+		<s_department>DCA</s_department>
+		<s_branch>MCA</s_branch>
+		<s_year_join>2018</s_year_join>
+		<s_mail>souravdey@gmail.com</s_mail>
+	</student>
+	
+	
+</student_details>

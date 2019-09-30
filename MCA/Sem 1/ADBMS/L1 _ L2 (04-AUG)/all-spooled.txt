@@ -1,0 +1,1733 @@
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> select * from user_cons_columns;
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029396                                     
+STUDENTS                                                                        
+NAME                                                                            
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029397                                     
+STUDENTS                                                                        
+SID                                                                             
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029398                                     
+STUDENTS                                                                        
+EMAIL                                                                           
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029805                                     
+ENROLLMENT                                                                      
+SID                                                                             
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029806                                     
+ENROLLMENT                                                                      
+YEAR                                                                            
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029807                                     
+ENROLLMENT                                                                      
+SID                                                                             
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029807                                     
+ENROLLMENT                                                                      
+CNO                                                                             
+         2                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029807                                     
+ENROLLMENT                                                                      
+YEAR                                                                            
+         3                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029808                                     
+ENROLLMENT                                                                      
+SID                                                                             
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029809                                     
+ENROLLMENT                                                                      
+CNO                                                                             
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        EMP_EMPNO_PK                                     
+EMP1                                                                            
+EMPNO                                                                           
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029798                                     
+COURSES                                                                         
+C_NAME                                                                          
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029799                                     
+COURSES                                                                         
+CID                                                                             
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        BIN$OuftQ1JURBakZsN1IRYGsA==$0                   
+BIN$hYXqw/V5TM6xNzMPSgTSIA==$0                                                  
+C_NAME                                                                          
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        BIN$+08gg1SGQk+zurDmg6qvDQ==$0                   
+BIN$av5CFsa6Te6xGjfzXCvzPg==$0                                                  
+SID                                                                             
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        BIN$xugGLIPjQK+pt0zY22lotA==$0                   
+BIN$av5CFsa6Te6xGjfzXCvzPg==$0                                                  
+CNO                                                                             
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        BIN$GmuXF1EVTUykBcDLXjNBGw==$0                   
+BIN$av5CFsa6Te6xGjfzXCvzPg==$0                                                  
+YEAR                                                                            
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        BIN$tuBy2EkfRaqRyZeKSEZgag==$0                   
+BIN$av5CFsa6Te6xGjfzXCvzPg==$0                                                  
+SID                                                                             
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        BIN$tuBy2EkfRaqRyZeKSEZgag==$0                   
+BIN$av5CFsa6Te6xGjfzXCvzPg==$0                                                  
+CNO                                                                             
+         2                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        BIN$tuBy2EkfRaqRyZeKSEZgag==$0                   
+BIN$av5CFsa6Te6xGjfzXCvzPg==$0                                                  
+YEAR                                                                            
+         3                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        BIN$YhB1RdVCQMmxzaQzMlVoQw==$0                   
+BIN$GXy4fXC0RTutiYMsQIlkng==$0                                                  
+SID                                                                             
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        BIN$8Oh6uOT6TRaw05Qc1yKLlw==$0                   
+BIN$GXy4fXC0RTutiYMsQIlkng==$0                                                  
+CNO                                                                             
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        BIN$BDckRxL7Q5KYgImhtEdHiw==$0                   
+BIN$GXy4fXC0RTutiYMsQIlkng==$0                                                  
+YEAR                                                                            
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        BIN$txrt3MSpSp6A/r7+VPkpOg==$0                   
+BIN$GXy4fXC0RTutiYMsQIlkng==$0                                                  
+SID                                                                             
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        BIN$txrt3MSpSp6A/r7+VPkpOg==$0                   
+BIN$GXy4fXC0RTutiYMsQIlkng==$0                                                  
+CNO                                                                             
+         2                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        BIN$txrt3MSpSp6A/r7+VPkpOg==$0                   
+BIN$GXy4fXC0RTutiYMsQIlkng==$0                                                  
+YEAR                                                                            
+         3                                                                      
+                                                                                
+
+26 rows selected.
+
+SQL> select owner, constraint_name, column_name from user_cons_columns where table_name='STUDENTS';
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+MCA9096                        SYS_C0029396                                     
+NAME                                                                            
+                                                                                
+MCA9096                        SYS_C0029397                                     
+SID                                                                             
+                                                                                
+MCA9096                        SYS_C0029398                                     
+EMAIL                                                                           
+                                                                                
+
+SQL> spool off;
+SQL> 
+SQL> 
+SQL> desc user_cons_columns;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ OWNER                                     NOT NULL VARCHAR2(30)
+ CONSTRAINT_NAME                           NOT NULL VARCHAR2(30)
+ TABLE_NAME                                NOT NULL VARCHAR2(30)
+ COLUMN_NAME                                        VARCHAR2(4000)
+ POSITION                                           NUMBER
+
+SQL> select * from user_cons_columns where table_name='STUDENTS';
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029396                                     
+STUDENTS                                                                        
+NAME                                                                            
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029397                                     
+STUDENTS                                                                        
+SID                                                                             
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029398                                     
+STUDENTS                                                                        
+EMAIL                                                                           
+         1                                                                      
+                                                                                
+
+SQL> select * from students;
+
+SID       NAME                             AGE EMAIL                            
+--------- ------------------------- ---------- ----------                       
+S101      AAA                               21 aaa@g.com                        
+S102      BBB                               22 bbb@g.com                        
+S103      CCC                               21 ccc@g.com                        
+S104      DDD                               21 ddd@g.com                        
+
+SQL> select * from user_cons_columns where table_name='STUDENTS';
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029396                                     
+STUDENTS                                                                        
+NAME                                                                            
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029397                                     
+STUDENTS                                                                        
+SID                                                                             
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0029398                                     
+STUDENTS                                                                        
+EMAIL                                                                           
+         1                                                                      
+                                                                                
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> desc user_cons_columns;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ OWNER                                     NOT NULL VARCHAR2(30)
+ CONSTRAINT_NAME                           NOT NULL VARCHAR2(30)
+ TABLE_NAME                                NOT NULL VARCHAR2(30)
+ COLUMN_NAME                                        VARCHAR2(4000)
+ POSITION                                           NUMBER
+
+SQL> desc students;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SID                                       NOT NULL CHAR(9)
+ NAME                                      NOT NULL VARCHAR2(25)
+ AGE                                                NUMBER(2)
+ EMAIL                                              VARCHAR2(10)
+
+SQL> alter table students add (last_name varchar2(45), city varchar2(40));
+
+Table altered.
+
+SQL> desc students;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SID                                       NOT NULL CHAR(9)
+ NAME                                      NOT NULL VARCHAR2(25)
+ AGE                                                NUMBER(2)
+ EMAIL                                              VARCHAR2(10)
+ LAST_NAME                                          VARCHAR2(45)
+ CITY                                               VARCHAR2(40)
+
+SQL> alter table students modify ( last_name varchar2(40) not null, city varchar2(75) );
+alter table students modify ( last_name varchar2(40) not null, city varchar2(75) )
+*
+ERROR at line 1:
+ORA-02296: cannot enable (MCA9096.) - null values found 
+
+
+SQL> alter table students modify ( last_name varchar2(40) not null, city varchar2(75) );
+alter table students modify ( last_name varchar2(40) not null, city varchar2(75) )
+*
+ERROR at line 1:
+ORA-02296: cannot enable (MCA9096.) - null values found 
+
+
+SQL> select last_name from students;
+
+LAST_NAME                                                                       
+---------------------------------------------                                   
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+SQL> select * from students;
+
+SID       NAME                             AGE EMAIL                            
+--------- ------------------------- ---------- ----------                       
+LAST_NAME                                                                       
+---------------------------------------------                                   
+CITY                                                                            
+----------------------------------------                                        
+S101      AAA                               21 aaa@g.com                        
+                                                                                
+                                                                                
+                                                                                
+S102      BBB                               22 bbb@g.com                        
+                                                                                
+                                                                                
+
+SID       NAME                             AGE EMAIL                            
+--------- ------------------------- ---------- ----------                       
+LAST_NAME                                                                       
+---------------------------------------------                                   
+CITY                                                                            
+----------------------------------------                                        
+                                                                                
+S103      CCC                               21 ccc@g.com                        
+                                                                                
+                                                                                
+                                                                                
+S104      DDD                               21 ddd@g.com                        
+                                                                                
+
+SID       NAME                             AGE EMAIL                            
+--------- ------------------------- ---------- ----------                       
+LAST_NAME                                                                       
+---------------------------------------------                                   
+CITY                                                                            
+----------------------------------------                                        
+                                                                                
+                                                                                
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> alter table drop column city from students;
+alter table drop column city from students
+            *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> alter table drop column city from students;
+alter table drop column city from students
+            *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> alter table drop city from students;
+alter table drop city from students
+            *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> desc students;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SID                                       NOT NULL CHAR(9)
+ NAME                                      NOT NULL VARCHAR2(25)
+ AGE                                                NUMBER(2)
+ EMAIL                                              VARCHAR2(10)
+ LAST_NAME                                          VARCHAR2(45)
+ CITY                                               VARCHAR2(40)
+
+SQL> alter table students add constraint check_stud_city check (city in ('hyd', 'wb', 'mnp'));
+
+Table altered.
+
+SQL> desc students;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SID                                       NOT NULL CHAR(9)
+ NAME                                      NOT NULL VARCHAR2(25)
+ AGE                                                NUMBER(2)
+ EMAIL                                              VARCHAR2(10)
+ LAST_NAME                                          VARCHAR2(45)
+ CITY                                               VARCHAR2(40)
+
+SQL> alter table drop laste_name from students;
+alter table drop laste_name from students
+            *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> alter table drop last_name from students;
+alter table drop last_name from students
+            *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> alter table drop column  last_name from students;
+alter table drop column  last_name from students
+            *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> alter table drop column  last_name from students;
+alter table drop column  last_name from students
+            *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> desc students;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SID                                       NOT NULL CHAR(9)
+ NAME                                      NOT NULL VARCHAR2(25)
+ AGE                                                NUMBER(2)
+ EMAIL                                              VARCHAR2(10)
+ LAST_NAME                                          VARCHAR2(45)
+ CITY                                               VARCHAR2(40)
+
+SQL> alter table students drop column city;
+
+Table altered.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> desc emp;
+ERROR:
+ORA-04043: object emp does not exist 
+
+
+SQL> 
+SQL> 
+SQL> desc emp
+ERROR:
+ORA-04043: object emp does not exist 
+
+
+SQL> desc emp;
+ERROR:
+ORA-04043: object emp does not exist 
+
+
+SQL> desc proj;
+ERROR:
+ORA-04043: object proj does not exist 
+
+
+SQL> desc dept;
+ERROR:
+ORA-04043: object dept does not exist 
+
+
+SQL> desc emp;
+ERROR:
+ORA-04043: object emp does not exist 
+
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\dept.sql";
+SP2-0734: unknown command beginning "constraint..." - rest of line ignored.
+SP2-0734: unknown command beginning "constraint..." - rest of line ignored.
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\dept.sql" /;
+SP2-0734: unknown command beginning "constraint..." - rest of line ignored.
+SP2-0734: unknown command beginning "constraint..." - rest of line ignored.
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\dept.sql";
+SP2-0734: unknown command beginning "constraint..." - rest of line ignored.
+SP2-0734: unknown command beginning "constraint..." - rest of line ignored.
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> 
+SQL> 
+SQL> 
+SQL> desc emp;
+ERROR:
+ORA-04043: object emp does not exist 
+
+
+SQL> desc emp;
+ERROR:
+ORA-04043: object emp does not exist 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\dept.sql";
+SP2-0734: unknown command beginning "constraint..." - rest of line ignored.
+SP2-0734: unknown command beginning "constraint..." - rest of line ignored.
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> create table dept
+  2  (
+  3  	dno			varchar2(3) primary key,
+  4  	dname 		varchar2(10) unique,
+  5  	location	varchar2(9) default 'BNG',
+  6  
+SQL> 	constraint check_dno check ( dno like 'D%' ),
+SP2-0734: unknown command beginning "constraint..." - rest of line ignored.
+SQL> 	constraint check_location check ( location in ('BNG', 'MNG', 'MUB', 'HYD', 'CHN') )
+SP2-0734: unknown command beginning "constraint..." - rest of line ignored.
+SQL> );
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> create table dept ( dno			varchar2(3) primary key, dname 		varchar2(10) unique,	location	varchar2(9) default 'BNG', constraint check_dno check ( dno like 'D%' ), constraint check_location check ( location in ('BNG', 'MNG', 'MUB', 'HYD', 'CHN') ));
+
+Table created.
+
+SQL> desc dept;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DNO                                       NOT NULL VARCHAR2(3)
+ DNAME                                              VARCHAR2(10)
+ LOCATION                                           VARCHAR2(9)
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> desc test;
+ERROR:
+ORA-04043: object test does not exist 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+
+Table created.
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+
+Table created.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+create table test
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+
+Table created.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+SP2-0734: unknown command beginning "constraint..." - rest of line ignored.
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> drop table test;
+
+Table dropped.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+SP2-0734: unknown command beginning "constraint..." - rest of line ignored.
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+	name varchar2(2),
+	                *
+ERROR at line 4:
+ORA-00904: : invalid identifier 
+
+
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+	name varchar2(2)
+	               *
+ERROR at line 4:
+ORA-00907: missing right parenthesis 
+
+
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+  6  /
+
+Table created.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> drop table test;
+
+Table dropped.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+  7  /
+
+Table created.
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+
+Table created.
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+
+Table created.
+
+create table test
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> drop table test;
+drop table test
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+
+Table created.
+
+create table test
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+create table test
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> desc test
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                                 NUMBER(1)
+ NAME                                               VARCHAR2(2)
+
+SQL> drop table test
+  2  ;
+
+Table dropped.
+
+SQL> desc test
+ERROR:
+ORA-04043: object test does not exist 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+
+Table created.
+
+SQL> desc test;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                                 NUMBER(1)
+ NAME                                               VARCHAR2(2)
+
+SQL> desc test;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                                 NUMBER(1)
+ NAME                                               VARCHAR2(2)
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> drop table test;
+drop table test
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+
+Table created.
+
+create table test
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> desc test
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                                 NUMBER(1)
+ NAME                                               VARCHAR2(2)
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\test.sql";
+
+Table created.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\dept.sql";
+create table dept
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> drop table dept;
+
+Table dropped.
+
+SQL> drop table emp;
+drop table emp
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> drop table proj;
+drop table proj
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\dept.sql";
+
+Table created.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\proj.sql";
+	constraint check_prj_credits check (prj_credits between 1 to 10),
+	                                                          *
+ERROR at line 10:
+ORA-00905: missing keyword 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+	sal 			number(7,2) deafult 20001,
+	    			            *
+ERROR at line 8:
+ORA-00907: missing right parenthesis 
+
+
+	sal 			number(7,2) deafult 20001,
+	    			            *
+ERROR at line 8:
+ORA-00907: missing right parenthesis 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+	mgr_id 			number(4) references emp(empno),
+	       			                     *
+ERROR at line 6:
+ORA-02270: no matching unique or primary key for this column-list 
+
+
+	mgr_id 			number(4) references emp(empno),
+	       			                     *
+ERROR at line 6:
+ORA-02270: no matching unique or primary key for this column-list 
+
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+	mgr_id 			number(4) references emp(empno),
+	       			                     *
+ERROR at line 6:
+ORA-02270: no matching unique or primary key for this column-list 
+
+
+	mgr_id 			number(4) references emp(empno),
+	       			                     *
+ERROR at line 6:
+ORA-02270: no matching unique or primary key for this column-list 
+
+
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+	mgr_id 			number(4) references emp(empno),
+	       			                     *
+ERROR at line 6:
+ORA-02270: no matching unique or primary key for this column-list 
+
+
+	mgr_id 			number(4) references emp(empno),
+	       			                     *
+ERROR at line 6:
+ORA-02270: no matching unique or primary key for this column-list 
+
+
+	mgr_id 			number(4) references emp(empno),
+	       			                     *
+ERROR at line 6:
+ORA-02270: no matching unique or primary key for this column-list 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+
+Table created.
+
+create table emp
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+create table emp
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> drop table emp;
+
+Table dropped.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+
+Table created.
+
+create table emp
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+create table emp
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> drop table emp
+  2  ;
+
+Table dropped.
+
+SQL> ;
+  1  drop table emp
+  2* 
+SQL> drop table emp;
+drop table emp
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+// alter table emp add constraint pk_empno  primary key 
+*
+ERROR at line 16:
+ORA-00922: missing or invalid option 
+
+
+// alter table emp add constraint pk_empno  primary key 
+*
+ERROR at line 16:
+ORA-00922: missing or invalid option 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+ 18  /
+
+Table created.
+
+SQL> drop table emp;
+
+Table dropped.
+
+SQL> drop table emp;
+drop table emp
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+
+Table created.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+
+Table altered.
+
+alter table emp add constraint pk_empno primary key (empno )
+                                        *
+ERROR at line 1:
+ORA-02260: table can have only one primary key 
+
+
+SQL> desc emp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR_ID                                             NUMBER(4)
+ DATE_BIRTH                                         DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             VARCHAR2(3)
+ DATE_OF_JOIN                                       DATE
+
+SQL> drop table emp;
+
+Table dropped.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+
+Table created.
+
+SQL> desc empl;
+ERROR:
+ORA-04043: object empl does not exist 
+
+
+SQL> desc emp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                              NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR_ID                                             NUMBER(4)
+ DATE_BIRTH                                         DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             VARCHAR2(3)
+ DATE_OF_JOIN                                       DATE
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+
+Table altered.
+
+alter table emp add constraint pk_empno primary key (empno)
+                                        *
+ERROR at line 1:
+ORA-02260: table can have only one primary key 
+
+
+SQL> desc emp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR_ID                                             NUMBER(4)
+ DATE_BIRTH                                         DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             VARCHAR2(3)
+ DATE_OF_JOIN                                       DATE
+
+SQL> dr9op table emp;
+SP2-0734: unknown command beginning "dr9op tabl..." - rest of line ignored.
+SQL> drop table emp;
+
+Table dropped.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+
+Table created.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+
+Table altered.
+
+alter table emp add constraint pk_empno primary key(empno)
+                                        *
+ERROR at line 1:
+ORA-02260: table can have only one primary key 
+
+
+SQL> drop table emp;
+
+Table dropped.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+
+Table created.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+
+Table altered.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\emp.sql";
+
+Table altered.
+
+SQL> desc emp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR_ID                                             NUMBER(4)
+ DATE_BIRTH                                         DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             VARCHAR2(3)
+ DATE_OF_JOIN                                       DATE
+
+SQL> desc dept;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DNO                                       NOT NULL VARCHAR2(3)
+ DNAME                                              VARCHAR2(10)
+ LOCATION                                           VARCHAR2(9)
+
+SQL> drop table dept;
+drop table dept
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+SQL> desc dept;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DNO                                       NOT NULL VARCHAR2(3)
+ DNAME                                              VARCHAR2(10)
+ LOCATION                                           VARCHAR2(9)
+
+SQL> desc proj;
+ERROR:
+ORA-04043: object proj does not exist 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\1.1\proj.sql";
+
+Table created.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> desc proj;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DNO                                       NOT NULL VARCHAR2(3)
+ PRJ_NO                                    NOT NULL VARCHAR2(5)
+ PRJ_NAME                                           VARCHAR2(10)
+ PRJ_CREDITS                                        NUMBER(2)
+ STRT_DATE                                          DATE
+ END_DATE                                           DATE
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\2\1\a.sql";
+
+Table altered.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> desc proj;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DNO                                       NOT NULL VARCHAR2(3)
+ PRJ_NO                                    NOT NULL VARCHAR2(5)
+ PRJ_NAME                                           VARCHAR2(10)
+ PRJ_CREDITS                                        NUMBER(2)
+ STRT_DATE                                          DATE
+ END_DATE                                           DATE
+
+SQL> desc emp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR_ID                                             NUMBER(4)
+ DATE_BIRTH                                         DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             VARCHAR2(3)
+ DATE_OF_JOIN                                       DATE
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> select owner, constraint_name, column_name from user_cons_columns where table_name='EMP';
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+MCA9096                        CHECK_JOB                                        
+JOB                                                                             
+                                                                                
+MCA9096                        CHECK_DATE_BIRTH                                 
+DATE_BIRTH                                                                      
+                                                                                
+MCA9096                        CHECK_DATE_BIRTH                                 
+DATE_OF_JOIN                                                                    
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+MCA9096                        CHECK_SAL                                        
+SAL                                                                             
+                                                                                
+MCA9096                        SYS_C0032591                                     
+DEPTNO                                                                          
+                                                                                
+MCA9096                        PK_EMPNO                                         
+EMPNO                                                                           
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+MCA9096                        SYS_C0032593                                     
+MGR_ID                                                                          
+                                                                                
+
+7 rows selected.
+
+SQL> select owner, constraint_name, column_name from user_cons_columns where table_name='EMP';
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+MCA9096                        CHECK_JOB                                        
+JOB                                                                             
+                                                                                
+MCA9096                        CHECK_DATE_BIRTH                                 
+DATE_BIRTH                                                                      
+                                                                                
+MCA9096                        CHECK_DATE_BIRTH                                 
+DATE_OF_JOIN                                                                    
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+MCA9096                        CHECK_SAL                                        
+SAL                                                                             
+                                                                                
+MCA9096                        SYS_C0032591                                     
+DEPTNO                                                                          
+                                                                                
+MCA9096                        PK_EMPNO                                         
+EMPNO                                                                           
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+MCA9096                        SYS_C0032593                                     
+MGR_ID                                                                          
+                                                                                
+
+7 rows selected.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> select owner, constraint_name, column_name from user_cons_columns where table_name='EMP';
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+MCA9096                        CHECK_JOB                                        
+JOB                                                                             
+                                                                                
+MCA9096                        CHECK_DATE_BIRTH                                 
+DATE_BIRTH                                                                      
+                                                                                
+MCA9096                        CHECK_DATE_BIRTH                                 
+DATE_OF_JOIN                                                                    
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+MCA9096                        CHECK_SAL                                        
+SAL                                                                             
+                                                                                
+MCA9096                        SYS_C0032591                                     
+DEPTNO                                                                          
+                                                                                
+MCA9096                        PK_EMPNO                                         
+EMPNO                                                                           
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+MCA9096                        SYS_C0032593                                     
+MGR_ID                                                                          
+                                                                                
+
+7 rows selected.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> desc proj;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DNO                                       NOT NULL VARCHAR2(3)
+ PRJ_NO                                    NOT NULL VARCHAR2(5)
+ PRJ_NAME                                           VARCHAR2(10)
+ PRJ_CREDITS                                        NUMBER(2)
+ STRT_DATE                                          DATE
+ END_DATE                                           DATE
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> desc emp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR_ID                                             NUMBER(4)
+ DATE_BIRTH                                         DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             VARCHAR2(3)
+ DATE_OF_JOIN                                       DATE
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\2\2\a.sql";
+
+Table altered.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\2\2\a.sql";
+alter table emp add column prj_id varchar2(5)
+                    *
+ERROR at line 1:
+ORA-00904: : invalid identifier 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\2\2\a.sql";
+
+Table altered.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\2\2\a.sql";
+alter table emp add constraint foreign key (deptno, proj_id) references proj(dno, proj_no)
+                                           *
+ERROR at line 1:
+ORA-00902: invalid datatype 
+
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> desc emp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR_ID                                             NUMBER(4)
+ DATE_BIRTH                                         DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             VARCHAR2(3)
+ DATE_OF_JOIN                                       DATE
+ PRJ_ID                                             VARCHAR2(5)
+
+SQL> desc proj;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DNO                                       NOT NULL VARCHAR2(3)
+ PRJ_NO                                    NOT NULL VARCHAR2(5)
+ PRJ_NAME                                           VARCHAR2(10)
+ PRJ_CREDITS                                        NUMBER(2)
+ STRT_DATE                                          DATE
+ END_DATE                                           DATE
+
+SQL> select count(*) from emp;
+
+  COUNT(*)                                                                      
+----------                                                                      
+         0                                                                      
+
+SQL> select count(*) from proj;
+
+  COUNT(*)                                                                      
+----------                                                                      
+         0                                                                      
+
+SQL> select count(*) from emp;
+
+  COUNT(*)                                                                      
+----------                                                                      
+         0                                                                      
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\2\2\a.sql";
+	add constraint foreign key (deptno, proj_id)
+	                           *
+ERROR at line 2:
+ORA-00902: invalid datatype 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\2\2\a.sql";
+	foreign key (deptno, proj_id)
+	                     *
+ERROR at line 3:
+ORA-00904: "PROJ_ID": invalid identifier 
+
+
+SQL> 
+SQL> 
+SQL> 
+SQL> desc emp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR_ID                                             NUMBER(4)
+ DATE_BIRTH                                         DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             VARCHAR2(3)
+ DATE_OF_JOIN                                       DATE
+ PRJ_ID                                             VARCHAR2(5)
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\2\2\a.sql";
+	references proj(dno, proj_no)
+	                     *
+ERROR at line 4:
+ORA-00904: "PROJ_NO": invalid identifier 
+
+
+SQL> desc proj;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DNO                                       NOT NULL VARCHAR2(3)
+ PRJ_NO                                    NOT NULL VARCHAR2(5)
+ PRJ_NAME                                           VARCHAR2(10)
+ PRJ_CREDITS                                        NUMBER(2)
+ STRT_DATE                                          DATE
+ END_DATE                                           DATE
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\2\2\a.sql";
+
+Table altered.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\2\3\a.sql";
+	(empno > 100)
+	*
+ERROR at line 3:
+ORA-00904: : invalid identifier 
+
+
+SQL> desc emp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR_ID                                             NUMBER(4)
+ DATE_BIRTH                                         DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             VARCHAR2(3)
+ DATE_OF_JOIN                                       DATE
+ PRJ_ID                                             VARCHAR2(5)
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\lab-exercises\2\3\a.sql";
+
+Table altered.
+
+SQL> desc emp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR_ID                                             NUMBER(4)
+ DATE_BIRTH                                         DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             VARCHAR2(3)
+ DATE_OF_JOIN                                       DATE
+ PRJ_ID                                             VARCHAR2(5)
+
+SQL> spool off;

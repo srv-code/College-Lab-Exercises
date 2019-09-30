@@ -1,0 +1,72 @@
+<!doctype html>
+<head>
+	<title>Eclipse</title>
+	
+	<style type="text/css">
+		
+	.moon{
+		width:150px;
+		height:150px;
+		position:absolute;
+		top:150px;
+		background-color:rgb(183,183,183);
+		animation-iteration-count:infinite;
+		animation-timing-function:linear;
+		animation-name:moonover;
+		animation-duration:10s;
+		z-index:999;
+	}
+	
+	.earth{
+		width:300px;
+		height:325px;
+		position:absolute;
+		left:400px;
+		border-radius:100%;
+		postion-x:500px;
+		background: -webkit-gradient(linear, left top, left bottom, from(rgb(149,185,251)), to(rgb(79,138,249)), color-stop(.5, #fff));
+		background: -ms-gradient(linear, left top, left bottom, from(rgb(149,185,251)), to(rgb(79,138,249)), color-stop(.5, #fff)); 
+		background: gradient(linear, left top, left bottom, from(rgb(149,185,251)), to(rgb(79,138,249)), color-stop(.5, #fff));
+		
+	}                       
+	
+	@keyframes moonover{
+		0%{
+			left:200px;
+			top 200px;
+			border-radius:100%;
+		}
+		60%{
+			
+			background-color: black;
+		}
+		100%{
+			left:1000px;
+			top 1000px;
+			border-radius:100%;
+		}
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Eclipse</h1>
+	</header>
+	
+
+	
+	<section>
+		<div class="moon">
+			
+		</div>
+		
+		<div class="earth">
+			
+		</div>
+		
+		
+	</section>
+	
+
+</body>
+</html>

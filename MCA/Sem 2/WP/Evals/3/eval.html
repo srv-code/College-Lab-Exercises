@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>---</title>
+		<style type="text/css">
+			#img_bg {
+				width: 200px;
+				height: 200px;
+				background-size: 200px 200px;
+				position: absolute;
+				
+				-webkit-animation-duration: 4s;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: linear;
+				-webkit-animation-name: slide;
+			}
+			
+			@-webkit-keyframes slide { 
+				0% { 
+					top:  0px;
+					left: 0px;
+					background-image: url(img/a.jpg);					
+				}
+				
+				25% { 
+					top:  0px;
+					left: 1165px;
+					background-image: url(img/b.jpg);
+				}
+				
+				50% {
+					top:  455px;
+					left: 1165px;
+					background-image: url(img/c.jpg);
+				}
+				
+				75% {
+					top:  455px;
+					left: 0px;
+					background-image: url(img/d.jpg);
+				} 
+				
+				100% {
+					top:  0px;
+					left: 0px;
+					background-image: url(img/a.jpg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div id="div_container">
+				<div id="img_bg"></div>
+			</div>
+		</div>
+	</body>
+</html>

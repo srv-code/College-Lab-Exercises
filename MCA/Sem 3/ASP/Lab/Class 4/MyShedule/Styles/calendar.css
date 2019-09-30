@@ -1,0 +1,34 @@
+﻿h1 {
+	text-align: center;
+	background-color: lightblue;
+	border: 1px solid blue;
+	padding: 10px;
+}
+
+.selected_day {
+	background-color: lightblue;
+	border: 2px dashed purple;
+}
+
+.today {
+	background-color: lime;
+	font-weight: bolder;
+	/* border: 2px solid green; */
+}
+
+.event_day {
+	background-color: lightgreen;
+	border: green;
+}
+
+.other_month_days {
+	background-color: lightgray;
+	/* border: 1px solid black; */
+}
+
+.day {
+	/* background-color: white; */
+	border: 1px solid gray;
+	vertical-align: top;
+	padding: 10px;
+}

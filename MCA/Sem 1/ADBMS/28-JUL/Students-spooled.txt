@@ -1,0 +1,295 @@
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Emp1.sql";
+
+Table created.
+
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Emp1.sql";
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Emp1.sql";
+insert into emp1 values (101, 'EEE', null, null, 1234, null, 10)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (MCA9096.EMP_EMPNO_PK) violated 
+
+
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Emp1.sql";
+
+1 row created.
+
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Emp1.sql";
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       101 AAA                                                       1234       
+                   10                                                           
+                                                                                
+       102 BBB                                                       1234       
+                   10                                                           
+                                                                                
+       103 CCC                                                       1234       
+                   10                                                           
+                                                                                
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       104 DDD                                                       1234       
+                   10                                                           
+                                                                                
+       105 EEE                                                       1234       
+                   10                                                           
+                                                                                
+
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Emp1.sql";
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       101 AAA                                                       1234       
+                   10                                                           
+                                                                                
+       102 BBB                                                       1234       
+                   10                                                           
+                                                                                
+       103 CCC                                                       1234       
+                   10                                                           
+                                                                                
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       104 DDD                                                       1234       
+                   10                                                           
+                                                                                
+       105 EEE                                                       1234       
+                   10                                                           
+                                                                                
+
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Emp1.sql";
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       101 AAA                                                       1234       
+                   10                                                           
+                                                                                
+       102 BBB                                                       1234       
+                   10                                                           
+                                                                                
+       103 CCC                                                       1234       
+                   10                                                           
+                                                                                
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       104 DDD                                                       1234       
+                   10                                                           
+                                                                                
+       105 EEE                                                       1234       
+                   10                                                           
+                                                                                
+
+SQL> select * from emp1
+  2  ;
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       101 AAA                                                       1234       
+                   10                                                           
+                                                                                
+       102 BBB                                                       1234       
+                   10                                                           
+                                                                                
+       103 CCC                                                       1234       
+                   10                                                           
+                                                                                
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       104 DDD                                                       1234       
+                   10                                                           
+                                                                                
+       105 EEE                                                       1234       
+                   10                                                           
+                                                                                
+
+SQL> select * from emp1;
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       101 AAA                                                       1234       
+                   10                                                           
+                                                                                
+       102 BBB                                                       1234       
+                   10                                                           
+                                                                                
+       103 CCC                                                       1234       
+                   10                                                           
+                                                                                
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       104 DDD                                                       1234       
+                   10                                                           
+                                                                                
+       105 EEE                                                       1234       
+                   10                                                           
+                                                                                
+
+SQL> desc emp1
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(6)
+ ENAME                                              VARCHAR2(20)
+ JOB                                                VARCHAR2(20)
+ HIREDATE                                           DATE
+ SAL                                                NUMBER(6)
+ BONUS                                              NUMBER(5)
+ DEPTNO                                             NUMBER(3)
+
+SQL> select * from emp1;
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       101 AAA                                                       1234       
+                   10                                                           
+                                                                                
+       102 BBB                                                       1234       
+                   10                                                           
+                                                                                
+       103 CCC                                                       1234       
+                   10                                                           
+                                                                                
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       104 DDD                                                       1234       
+                   10                                                           
+                                                                                
+       105 EEE                                                       1234       
+                   10                                                           
+                                                                                
+
+SQL> select * from emp1
+  2  ;
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       101 AAA                                                       1234       
+                   10                                                           
+                                                                                
+       102 BBB                                                       1234       
+                   10                                                           
+                                                                                
+       103 CCC                                                       1234       
+                   10                                                           
+                                                                                
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       104 DDD                                                       1234       
+                   10                                                           
+                                                                                
+       105 EEE                                                       1234       
+                   10                                                           
+                                                                                
+
+SQL> select * from emp1;
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       101 AAA                                                       1234       
+                   10                                                           
+                                                                                
+       102 BBB                                                       1234       
+                   10                                                           
+                                                                                
+       103 CCC                                                       1234       
+                   10                                                           
+                                                                                
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       104 DDD                                                       1234       
+                   10                                                           
+                                                                                
+       105 EEE                                                       1234       
+                   10                                                           
+                                                                                
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Emp1.sql";
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       101 AAA                                                       1234       
+                   10                                                           
+                                                                                
+       102 BBB                                                       1234       
+                   10                                                           
+                                                                                
+       103 CCC                                                       1234       
+                   10                                                           
+                                                                                
+
+     EMPNO ENAME                JOB                  HIREDATE         SAL       
+---------- -------------------- -------------------- --------- ----------       
+     BONUS     DEPTNO                                                           
+---------- ----------                                                           
+       104 DDD                                                       1234       
+                   10                                                           
+                                                                                
+       105 EEE                                                       1234       
+                   10                                                           
+                                                                                
+
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Emp1.sql";
+SQL> spool off

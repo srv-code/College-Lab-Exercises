@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>My drawing canvas</title>
+		<script src="canvas.js" type="text/javascript" language="javascript"></script>
+		<link rel="stylesheet" type="text/css" href="canvas.css">
+	</head>
+	<body>
+		<h2>My drawing canvas</h2>
+		<div id="div_canvas">
+			<canvas	id="main_canvas" 
+					width="1200" height="500" 
+					onmousemove="sketch(event);" 
+					onmouseout="clearCoordDisplay();">
+			</canvas>
+		</div>
+		<input type="text" readonly class="invisible" id="txt_coords" />
+	</body>
+</html>

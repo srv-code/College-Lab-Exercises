@@ -1,0 +1,1355 @@
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql"
+
+no rows selected
+
+
+1 row created.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde             10000 22-DEC-01                                      
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql"
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde             10000 22-DEC-01                                      
+
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde             10000 22-DEC-01                                      
+
+
+1 row created.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde             10000 22-DEC-01                                      
+         3 Fgh              2000 20-DEC-01                                      
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql"
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql"
+
+1 row created.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql"; select * from emp_1;
+
+1 row created.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde             10000 22-DEC-01                                      
+         3 Fgh              2000 20-DEC-01                                      
+         4                  1000                                                
+         4                  1000                                                
+
+SQL> delete from emp_1 where ename='';'
+  2  
+SQL> delete from emp_1 where ename='';
+
+0 rows deleted.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde             10000 22-DEC-01                                      
+         3 Fgh              2000 20-DEC-01                                      
+         4                  1000                                                
+         4                  1000                                                
+
+SQL> delete from emp_1 where empno=4;
+
+2 rows deleted.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde             10000 22-DEC-01                                      
+         3 Fgh              2000 20-DEC-01                                      
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql"; select * from emp_1;
+Enter value for empno: 4
+Enter value for ename: Hij
+Enter value for sal: 4000
+Enter value for to_date: 01-11-2001
+Enter value for bdate: 10-10-2001
+old   2: 	values (&empno, '&ename', &sal, &to_date('&bdate', 'DD-MM-YYYY'))
+new   2: 	values (4, 'Hij', 4000, 01-11-2001('10-10-2001', 'DD-MM-YYYY'))
+	values (4, 'Hij', 4000, 01-11-2001('10-10-2001', 'DD-MM-YYYY'))
+	                                  *
+ERROR at line 2:
+ORA-00917: missing comma 
+
+
+SQL> 10-10-2001
+SP2-0042: unknown command "10-10-2001" - rest of line ignored.
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql"; select * from emp_1;
+Enter value for empno: 4
+Enter value for ename: Hij
+Enter value for sal: 4000
+Enter value for bdate: 01-11-2001
+old   2: 	values (&empno, '&ename', &sal, to_date('&bdate', 'DD-MM-YYYY'))
+new   2: 	values (4, 'Hij', 4000, to_date('01-11-2001', 'DD-MM-YYYY'))
+
+1 row created.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde             10000 22-DEC-01                                      
+         3 Fgh              2000 20-DEC-01                                      
+         4 Hij              4000 01-NOV-01                                      
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql";
+Enter value for emp_no: 5
+Enter value for ename: aa
+Enter value for sal: aa
+Enter value for bdate: qq
+old   1: insert into emp_1 values (&emp_no, '&ename', &sal, to_date('&bdate', 'DD-MM-YYYY'))
+new   1: insert into emp_1 values (5, 'aa', aa, to_date('qq', 'DD-MM-YYYY'))
+insert into emp_1 values (5, 'aa', aa, to_date('qq', 'DD-MM-YYYY'))
+                                   *
+ERROR at line 1:
+ORA-00984: column not allowed here 
+
+
+SQL> select * from  emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde             10000 22-DEC-01                                      
+         3 Fgh              2000 20-DEC-01                                      
+         4 Hij              4000 01-NOV-01                                      
+
+SQL> desc emp_senior;
+ERROR:
+ORA-04043: object emp_senior does not exist 
+
+
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql";
+	set sal = sal * 10
+	              *
+ERROR at line 2:
+ORA-01438: value larger than specified precision allowed for this column 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql";
+
+4 rows updated.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc               500 20-JAN-01                                      
+         2 Cde              1000 22-DEC-01                                      
+         3 Fgh               200 20-DEC-01                                      
+         4 Hij               400 01-NOV-01                                      
+
+SQL> rollback
+  2  ;
+
+Rollback complete.
+
+SQL> select * from emp_1;
+
+no rows selected
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql";
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+Enter value for emp_no: d
+Enter value for ename: d
+Enter value for sal: d
+Enter value for bdate: d
+old   1: insert into emp_1 values (&emp_no, '&ename', &sal, to_date('&bdate', 'DD-MM-YYYY'))
+new   1: insert into emp_1 values (d, 'd', d, to_date('d', 'DD-MM-YYYY'))
+insert into emp_1 values (d, 'd', d, to_date('d', 'DD-MM-YYYY'))
+                                  *
+ERROR at line 1:
+ORA-00984: column not allowed here 
+
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde             10000 22-DEC-01                                      
+         3 Fgh              2000 20-DEC-01                                      
+         4                  1000                                                
+
+SQL> delete from emp_1 where empno=4;
+
+1 row deleted.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde             10000 22-DEC-01                                      
+         3 Fgh              2000 20-DEC-01                                      
+
+SQL> commit;
+
+Commit complete.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde             10000 22-DEC-01                                      
+         3 Fgh              2000 20-DEC-01                                      
+
+SQL> delete from emp_1 where empno=4;
+
+0 rows deleted.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql";
+
+3 rows updated.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc               500 20-JAN-01                                      
+         2 Cde              1000 22-DEC-01                                      
+         3 Fgh               200 20-DEC-01                                      
+
+SQL> rollback;
+
+Rollback complete.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde             10000 22-DEC-01                                      
+         3 Fgh              2000 20-DEC-01                                      
+
+SQL> commit;
+
+Commit complete.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql";
+
+2 rows updated.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde              1000 22-DEC-01                                      
+         3 Fgh               200 20-DEC-01                                      
+
+SQL> commit;
+
+Commit complete.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql";
+
+1 row created.
+
+
+1 row created.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde              1000 22-DEC-01                                      
+         3 Fgh               200 20-DEC-01                                      
+         4 Ijk              4000 20-OCT-01                                      
+         5 Lmn              2500 19-SEP-01                                      
+
+SQL> commit;
+
+Commit complete.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql";
+SQL> 
+SQL> 
+SQL> 
+SQL> select * from emp;
+
+no rows selected
+
+SQL> select 12 from dual;
+
+        12                                                                      
+----------                                                                      
+        12                                                                      
+
+SQL> select 12 as "col" from dual;
+
+       col                                                                      
+----------                                                                      
+        12                                                                      
+
+SQL> select 12 as col from dual;
+
+       COL                                                                      
+----------                                                                      
+        12                                                                      
+
+SQL> select 12 as col from dual;
+
+       COL                                                                      
+----------                                                                      
+        12                                                                      
+
+SQL> select 12, 14 as col from dual;
+
+        12        COL                                                           
+---------- ----------                                                           
+        12         14                                                           
+
+SQL> select (12, 14) as col from dual;
+select (12, 14) as col from dual
+          *
+ERROR at line 1:
+ORA-00907: missing right parenthesis 
+
+
+SQL> select 12 as col as col from dual;
+select 12 as col as col from dual
+                 *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> select 12 as col  from dual;
+
+       COL                                                                      
+----------                                                                      
+        12                                                                      
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\dept_1.sql";
+
+Table created.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\dept_1.sql";
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\dept_1.sql";
+
+       DNO DNAME                                                                
+---------- ----------                                                           
+         1 aa                                                                   
+         2 bb                                                                   
+         3 cc                                                                   
+
+SQL> select * from emp_1 where empno in (select dno from dept_1);
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde              1000 22-DEC-01                                      
+         3 Fgh               200 20-DEC-01                                      
+
+SQL> select * from emp_1 where empno = (select dno from dept_1);
+select * from emp_1 where empno = (select dno from dept_1)
+                                   *
+ERROR at line 1:
+ORA-01427: single-row subquery returns more than one row 
+
+
+SQL> select * from emp_1 where empno = (select dno from dept_1 where dname = 'aa');
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+
+SQL> select * from emp_1 where empno = (select dno from dept_1 where dname = 'aa') as a;
+select * from emp_1 where empno = (select dno from dept_1 where dname = 'aa') as a
+                                                                              *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> select * from emp_1 where empno = (select dno from dept_1 where dname = 'aa')  a;
+select * from emp_1 where empno = (select dno from dept_1 where dname = 'aa')  a
+                                                                               *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> select * from emp_1 where empno = (select dno from dept_1 where dname = 'aa');
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> commit
+  2  ;'
+  3  
+SQL> 
+SQL> 
+SQL> 
+SQL> commit ;
+
+Commit complete.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> delete from emp_1;'
+  2  
+SQL> delete from emp_1;
+
+5 rows deleted.
+
+SQL> select * from emp-1;
+select * from emp-1
+                 *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> select * from emp_1;
+
+no rows selected
+
+SQL> rollback;
+
+Rollback complete.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde              1000 22-DEC-01                                      
+         3 Fgh               200 20-DEC-01                                      
+         4 Ijk              4000 20-OCT-01                                      
+         5 Lmn              2500 19-SEP-01                                      
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> delete from emp_1 where empno <= 2;
+
+2 rows deleted.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         3 Fgh               200 20-DEC-01                                      
+         4 Ijk              4000 20-OCT-01                                      
+         5 Lmn              2500 19-SEP-01                                      
+
+SQL> rollback;
+
+Rollback complete.
+
+SQL> select * from emp_1;
+
+     EMPNO ENAME             SAL BDATE                                          
+---------- ---------- ---------- ---------                                      
+         1 Abc              5000 20-JAN-01                                      
+         2 Cde              1000 22-DEC-01                                      
+         3 Fgh               200 20-DEC-01                                      
+         4 Ijk              4000 20-OCT-01                                      
+         5 Lmn              2500 19-SEP-01                                      
+
+SQL> commit ;
+
+Commit complete.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> commit ;
+
+Commit complete.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\emp_1.sql"
+delete from emp_1 where dno in
+                        *
+ERROR at line 1:
+ORA-00904: "DNO": invalid identifier 
+
+
+SQL> desc emp_1;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                              NUMBER(3)
+ ENAME                                              VARCHAR2(10)
+ SAL                                                NUMBER(5)
+ BDATE                                              DATE
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> desc emp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR_ID                                             NUMBER(4)
+ DATE_BIRTH                                         DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             VARCHAR2(3)
+ DATE_OF_JOIN                                       DATE
+ PRJ_ID                                    NOT NULL VARCHAR2(5)
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\3\1\a.sql";
+insert into emp (empno, ename, job, mgr_id, date_birth, sal, comm, deptno, prj_id, date_of_join) values (100, Ravi, 'MGR', 111, to_date('10-10-1928', 'DD-MM-YYYY'), 32000, null, 'P1', to_date('02-10-2001', 'DD-MM-YYYY'))
+                                                                                                 *
+ERROR at line 1:
+ORA-00947: not enough values 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\3\1\a.sql";
+insert into emp (empno, ename, job, mgr_id, date_birth, sal, comm, deptno, prj_id, date_of_join) values (100, Ravi, 'MGR', 111, to_date('10-10-1928', 'DD-MM-YYYY'), 32000, null, 'D1', 'P1', to_date('02-10-2001', 'DD-MM-YYYY'))
+                                                                                                              *
+ERROR at line 1:
+ORA-00984: column not allowed here 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\3\1\a.sql";
+insert into emp (empno, ename, job, mgr_id, date_birth, sal, comm, deptno, prj_id, date_of_join) values (100, 'Ravi', 'MGR', 111, to_date('10-10-1928', 'DD-MM-YYYY'), 32000, null, 'D1', 'P1', to_date('02-10-2001', 'DD-MM-YYYY'))
+*
+ERROR at line 1:
+ORA-02290: check constraint (MCA9096.CHECK_EMPNO) violated 
+
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\check_table_constaints.sql";
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        CHECK_JOB                                        
+EMP                                                                             
+JOB                                                                             
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        CHECK_DATE_BIRTH                                 
+EMP                                                                             
+DATE_BIRTH                                                                      
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        CHECK_DATE_BIRTH                                 
+EMP                                                                             
+DATE_OF_JOIN                                                                    
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        CHECK_SAL                                        
+EMP                                                                             
+SAL                                                                             
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        FK_DEPTNO_PROJ_ID                                
+EMP                                                                             
+DEPTNO                                                                          
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        PK_EMPNO                                         
+EMP                                                                             
+EMPNO                                                                           
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        FK_MGR_ID_EMPNO                                  
+EMP                                                                             
+MGR_ID                                                                          
+         1                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        SYS_C0033968                                     
+EMP                                                                             
+PRJ_ID                                                                          
+                                                                                
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        FK_DEPTNO_PROJ_ID                                
+EMP                                                                             
+PRJ_ID                                                                          
+         2                                                                      
+                                                                                
+
+OWNER                          CONSTRAINT_NAME                                  
+------------------------------ ------------------------------                   
+TABLE_NAME                                                                      
+------------------------------                                                  
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+MCA9096                        CHECK_EMPNO                                      
+EMP                                                                             
+EMPNO                                                                           
+                                                                                
+                                                                                
+
+10 rows selected.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\check_table_constaints.sql";
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+CONSTRAINT_NAME                                                                 
+------------------------------                                                  
+JOB                                                                             
+CHECK_JOB                                                                       
+                                                                                
+DATE_BIRTH                                                                      
+CHECK_DATE_BIRTH                                                                
+                                                                                
+DATE_OF_JOIN                                                                    
+CHECK_DATE_BIRTH                                                                
+                                                                                
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+CONSTRAINT_NAME                                                                 
+------------------------------                                                  
+SAL                                                                             
+CHECK_SAL                                                                       
+                                                                                
+DEPTNO                                                                          
+FK_DEPTNO_PROJ_ID                                                               
+                                                                                
+EMPNO                                                                           
+PK_EMPNO                                                                        
+                                                                                
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+CONSTRAINT_NAME                                                                 
+------------------------------                                                  
+MGR_ID                                                                          
+FK_MGR_ID_EMPNO                                                                 
+                                                                                
+PRJ_ID                                                                          
+SYS_C0033968                                                                    
+                                                                                
+PRJ_ID                                                                          
+FK_DEPTNO_PROJ_ID                                                               
+                                                                                
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+CONSTRAINT_NAME                                                                 
+------------------------------                                                  
+EMPNO                                                                           
+CHECK_EMPNO                                                                     
+                                                                                
+
+10 rows selected.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\lab-exercises\3\1\a.sql" ;
+insert into emp (empno, ename, job, mgr_id, date_birth, sal, comm, deptno, prj_id, date_of_join) values (100, 'Ravi', 'MGR', 111, to_date('10-10-1928', 'DD-MM-YYYY'), 32000, null, 'D1', 'P1', to_date('02-10-2001', 'DD-MM-YYYY'))
+*
+ERROR at line 1:
+ORA-02290: check constraint (MCA9096.CHECK_EMPNO) violated 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\lab-exercises\3\1\a.sql" ;
+insert into emp (empno, ename, job, mgr_id, date_birth, sal, comm, deptno, prj_id, date_of_join) values (101, 'Ravi', 'MGR', 111, to_date('10-10-1928', 'DD-MM-YYYY'), 32000, null, 'D1', 'P1', to_date('02-10-2001', 'DD-MM-YYYY'))
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (MCA9096.FK_DEPTNO_PROJ_ID) violated - parent 
+key not found 
+
+
+SQL> desc dept;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DNO                                       NOT NULL VARCHAR2(3)
+ DNAME                                              VARCHAR2(10)
+ LOCATION                                           VARCHAR2(9)
+
+SQL> desc proj;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DNO                                       NOT NULL VARCHAR2(3)
+ PRJ_NO                                    NOT NULL VARCHAR2(5)
+ PRJ_NAME                                           VARCHAR2(10)
+ PRJ_CREDITS                                        NUMBER(2)
+ STRT_DATE                                          DATE
+ END_DATE                                           DATE
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> @ C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\check_table_constaints.sql" ;
+SP2-0556: Invalid file name.
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\4-AUG\check_table_constaints.sql" ;
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+CONSTRAINT_NAME                                                                 
+------------------------------                                                  
+DNO                                                                             
+CHECK_DNO                                                                       
+                                                                                
+LOCATION                                                                        
+CHECK_LOCATION                                                                  
+                                                                                
+DNO                                                                             
+SYS_C0033953                                                                    
+                                                                                
+
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+CONSTRAINT_NAME                                                                 
+------------------------------                                                  
+DNAME                                                                           
+SYS_C0033954                                                                    
+                                                                                
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\lab-exercises\3\2\a.sql"
+
+1 row created.
+
+
+1 row created.
+
+insert into dept (dno, dname, location) values ('D3', 'Administrator', 'BNG')
+                                                      *
+ERROR at line 1:
+ORA-12899: value too large for column "MCA9096"."DEPT"."DNAME" (actual: 13, 
+maximum: 10) 
+
+
+insert into dept (dno, dname, location) values ('D4', null, 'BGG')
+*
+ERROR at line 1:
+ORA-02290: check constraint (MCA9096.CHECK_LOCATION) violated 
+
+
+
+1 row created.
+
+insert into dept (dno, dname, location) values (null, 'Corporate', 'HYD')
+                                                *
+ERROR at line 1:
+ORA-01400: cannot insert NULL into ("MCA9096"."DEPT"."DNO") 
+
+
+SQL> select * from dept;
+
+DNO DNAME      LOCATION                                                         
+--- ---------- ---------                                                        
+D1  Marketing  CHN                                                              
+D2  Reasearch  MNG                                                              
+D5  IT         BNG                                                              
+
+SQL> commit
+  2  ;
+
+Commit complete.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> select * from dept;
+
+DNO DNAME      LOCATION                                                         
+--- ---------- ---------                                                        
+D1  Marketing  CHN                                                              
+D2  Reasearch  MNG                                                              
+D5  IT         BNG                                                              
+
+SQL> select count(*) from dept;
+
+  COUNT(*)                                                                      
+----------                                                                      
+         3                                                                      
+
+SQL> select sum(*) from dept;
+select sum(*) from dept
+           *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select sum(dname) from dept;
+select sum(dname) from dept
+           *
+ERROR at line 1:
+ORA-01722: invalid number 
+
+
+SQL> select count(*) from dept;
+
+  COUNT(*)                                                                      
+----------                                                                      
+         3                                                                      
+
+SQL> select * from dept;
+
+DNO DNAME      LOCATION                                                         
+--- ---------- ---------                                                        
+D1  Marketing  CHN                                                              
+D2  Reasearch  MNG                                                              
+D5  IT         BNG                                                              
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\lab-exercises\3\2\a.sql" ;
+
+1 row created.
+
+insert into dept (dno, dname, location) values ('D4', 'Corporate', 'BGG')
+*
+ERROR at line 1:
+ORA-02290: check constraint (MCA9096.CHECK_LOCATION) violated 
+
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\lab-exercises\3\2\a.sql" ;
+
+1 row created.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> select count(*) from dept;
+
+  COUNT(*)                                                                      
+----------                                                                      
+         5                                                                      
+
+SQL> select (*) from dept;
+select (*) from dept
+        *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select * from dept;
+
+DNO DNAME      LOCATION                                                         
+--- ---------- ---------                                                        
+D1  Marketing  CHN                                                              
+D2  Reasearch  MNG                                                              
+D5  IT         BNG                                                              
+D3  Admin      BNG                                                              
+D4  Corporate  MNG                                                              
+
+SQL> select * from dept order by dname asc;
+
+DNO DNAME      LOCATION                                                         
+--- ---------- ---------                                                        
+D3  Admin      BNG                                                              
+D4  Corporate  MNG                                                              
+D5  IT         BNG                                                              
+D1  Marketing  CHN                                                              
+D2  Reasearch  MNG                                                              
+
+SQL> select * from dept order by dno asc;
+
+DNO DNAME      LOCATION                                                         
+--- ---------- ---------                                                        
+D1  Marketing  CHN                                                              
+D2  Reasearch  MNG                                                              
+D3  Admin      BNG                                                              
+D4  Corporate  MNG                                                              
+D5  IT         BNG                                                              
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> desc proj;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DNO                                       NOT NULL VARCHAR2(3)
+ PRJ_NO                                    NOT NULL VARCHAR2(5)
+ PRJ_NAME                                           VARCHAR2(10)
+ PRJ_CREDITS                                        NUMBER(2)
+ STRT_DATE                                          DATE
+ END_DATE                                           DATE
+
+SQL> select * from proj;
+
+no rows selected
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> select * from dept;
+
+DNO DNAME      LOCATION                                                         
+--- ---------- ---------                                                        
+D1  Marketing  CHN                                                              
+D2  Reasearch  MNG                                                              
+D5  IT         BNG                                                              
+D3  Admin      BNG                                                              
+D4  Corporate  MNG                                                              
+
+SQL> select * from dept order by dno asc ;
+
+DNO DNAME      LOCATION                                                         
+--- ---------- ---------                                                        
+D1  Marketing  CHN                                                              
+D2  Reasearch  MNG                                                              
+D3  Admin      BNG                                                              
+D4  Corporate  MNG                                                              
+D5  IT         BNG                                                              
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\lab-exercises\3\3\a.sql";
+insert into proj (dno, prj_no, prj_name, prj_credits, strt_date, end_date) values ('D1', 'P1', null, 2, to_date('20-08-2003', 'DD-MM-YYYY'), to_date('22-02-2000', 'DD-MM-YYYY'))
+*
+ERROR at line 1:
+ORA-02290: check constraint (MCA9096.CHECK_END_DATE) violated 
+
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> select count(*) from proj;
+
+  COUNT(*)                                                                      
+----------                                                                      
+         5                                                                      
+
+SQL> select * from proj;
+
+DNO PRJ_N PRJ_NAME   PRJ_CREDITS STRT_DATE END_DATE                             
+--- ----- ---------- ----------- --------- ---------                            
+D1  P1                         2 20-AUG-01 22-FEB-06                            
+D2  P1                         2 15-JUN-01 20-MAR-06                            
+D3  P2                         2 21-DEC-01 15-MAY-06                            
+D4  P3                         2 25-NOV-01 23-DEC-06                            
+D5  P2                         2 20-FEB-01 22-SEP-06                            
+
+SQL> 
+SQL> 
+SQL> 
+SQL> select * from emp;
+
+no rows selected
+
+SQL> commit;
+
+Commit complete.
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\lab-exercises\3\1\a.sql" ;
+
+1 row created.
+
+insert into emp (empno, ename, job, mgr_id, date_birth, sal, comm, deptno, prj_id, date_of_join) values (102, 'Raviraj', 'CLRK', null, to_date('10-12-1980', 'DD-MM-YYYY'), 24000, null, 'D1', 'P3', to_date('12-11-2000', 'DD-MM-YYYY'))
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (MCA9096.FK_DEPTNO_PROJ_ID) violated - parent 
+key not found 
+
+
+insert into emp (empno, ename, job, mgr_id, date_birth, sal, comm, deptno, prj_id, date_of_join) values (111, 'Raghu', 'GM', null, to_date('10-12-1974', 'DD-MM-YYYY'), 45000, 15000, null, null, to_date('03-12-1985', 'DD-MM-YYYY'))
+                                                                                                                                                                                            *
+ERROR at line 1:
+ORA-01400: cannot insert NULL into ("MCA9096"."EMP"."PRJ_ID") 
+
+
+insert into emp (empno, ename, job, mgr_id, date_birth, sal, comm, deptno, prj_id, date_of_join) values (150, null, 'CEO', null, to_date('10-12-1970', 'DD-MM-YYYY'), 60000, 30000, null, null, to_date('03-12-1990', 'DD-MM-YYYY'))
+                                                                                                                                                                                          *
+ERROR at line 1:
+ORA-01400: cannot insert NULL into ("MCA9096"."EMP"."PRJ_ID") 
+
+
+insert into emp (empno, ename, job, mgr_id, date_birth, sal, comm, deptno, prj_id, date_of_join) values (125, 'Manu', 'A.MGR', null, to_date('10-12-1980', 'DD-MM-YYYY'), null, null, 'D4', 'P2', to_date('02-10-2002', 'DD-MM-YYYY'))
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (MCA9096.FK_DEPTNO_PROJ_ID) violated - parent 
+key not found 
+
+
+
+1 row created.
+
+SQL> 
+SQL> select count(*) from emp;
+
+  COUNT(*)                                                                      
+----------                                                                      
+         2                                                                      
+
+SQL> select * from proj;
+
+DNO PRJ_N PRJ_NAME   PRJ_CREDITS STRT_DATE END_DATE                             
+--- ----- ---------- ----------- --------- ---------                            
+D1  P1                         2 20-AUG-01 22-FEB-06                            
+D2  P1                         2 15-JUN-01 20-MAR-06                            
+D3  P2                         2 21-DEC-01 15-MAY-06                            
+D4  P3                         2 25-NOV-01 23-DEC-06                            
+D5  P2                         2 20-FEB-01 22-SEP-06                            
+
+SQL> select prj_name from proj;
+
+PRJ_NAME                                                                        
+----------                                                                      
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+SQL> select prj_no from proj;
+
+PRJ_N                                                                           
+-----                                                                           
+P1                                                                              
+P1                                                                              
+P2                                                                              
+P3                                                                              
+P2                                                                              
+
+SQL> select prj_n from proj;
+select prj_n from proj
+       *
+ERROR at line 1:
+ORA-00904: "PRJ_N": invalid identifier 
+
+
+SQL> select unique(prj_no) from proj;
+
+PRJ_N                                                                           
+-----                                                                           
+P1                                                                              
+P2                                                                              
+P3                                                                              
+
+SQL> select unique(prj_no) as prj_no from proj;
+
+PRJ_N                                                                           
+-----                                                                           
+P1                                                                              
+P2                                                                              
+P3                                                                              
+
+SQL> select unique(prj_no) as "PRJ_NO" from proj;
+
+PRJ_N                                                                           
+-----                                                                           
+P1                                                                              
+P2                                                                              
+P3                                                                              
+
+SQL> select unique(prj_no) as "PRx_NO" from proj;
+
+PRx_N                                                                           
+-----                                                                           
+P1                                                                              
+P2                                                                              
+P3                                                                              
+
+SQL> select * from proj;
+
+DNO PRJ_N PRJ_NAME   PRJ_CREDITS STRT_DATE END_DATE                             
+--- ----- ---------- ----------- --------- ---------                            
+D1  P1                         2 20-AUG-01 22-FEB-06                            
+D2  P1                         2 15-JUN-01 20-MAR-06                            
+D3  P2                         2 21-DEC-01 15-MAY-06                            
+D4  P3                         2 25-NOV-01 23-DEC-06                            
+D5  P2                         2 20-FEB-01 22-SEP-06                            
+
+SQL> @ "C:\Users\mca\Desktop\srv\ADBMS096\Projects\11-AUG\lab-exercises\3\1\a.sql" ;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> commit;
+
+Commit complete.
+
+SQL> select * from proj;
+
+DNO PRJ_N PRJ_NAME   PRJ_CREDITS STRT_DATE END_DATE                             
+--- ----- ---------- ----------- --------- ---------                            
+D1  P1                         2 20-AUG-01 22-FEB-06                            
+D2  P1                         2 15-JUN-01 20-MAR-06                            
+D3  P2                         2 21-DEC-01 15-MAY-06                            
+D4  P3                         2 25-NOV-01 23-DEC-06                            
+D5  P2                         2 20-FEB-01 22-SEP-06                            
+
+SQL> select * from proj where proj_no='P2';
+select * from proj where proj_no='P2'
+                         *
+ERROR at line 1:
+ORA-00904: "PROJ_NO": invalid identifier 
+
+
+SQL> select * from proj where prj_no='P2';
+
+DNO PRJ_N PRJ_NAME   PRJ_CREDITS STRT_DATE END_DATE                             
+--- ----- ---------- ----------- --------- ---------                            
+D3  P2                         2 21-DEC-01 15-MAY-06                            
+D5  P2                         2 20-FEB-01 22-SEP-06                            
+
+SQL> delete from proj where prj_no='P2';
+delete from proj where prj_no='P2'
+*
+ERROR at line 1:
+ORA-02292: integrity constraint (MCA9096.FK_DEPTNO_PROJ_ID) violated - child 
+record found 
+
+
+SQL> select * from proj ;
+
+DNO PRJ_N PRJ_NAME   PRJ_CREDITS STRT_DATE END_DATE                             
+--- ----- ---------- ----------- --------- ---------                            
+D1  P1                         2 20-AUG-01 22-FEB-06                            
+D2  P1                         2 15-JUN-01 20-MAR-06                            
+D3  P2                         2 21-DEC-01 15-MAY-06                            
+D4  P3                         2 25-NOV-01 23-DEC-06                            
+D5  P2                         2 20-FEB-01 22-SEP-06                            
+
+SQL> desc proj;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DNO                                       NOT NULL VARCHAR2(3)
+ PRJ_NO                                    NOT NULL VARCHAR2(5)
+ PRJ_NAME                                           VARCHAR2(10)
+ PRJ_CREDITS                                        NUMBER(2)
+ STRT_DATE                                          DATE
+ END_DATE                                           DATE
+
+SQL> desc emp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR_ID                                             NUMBER(4)
+ DATE_BIRTH                                         DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             VARCHAR2(3)
+ DATE_OF_JOIN                                       DATE
+ PRJ_ID                                    NOT NULL VARCHAR2(5)
+
+SQL> exit

@@ -1,0 +1,38 @@
+<html>
+    <head>
+		<title>JS Tester Module 1</title>
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <script src="js/tester1.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form>
+            <table>
+                <th colspan="2">
+                    <input id="txtMsg" type="text" readonly />
+                </th>
+
+                <tr>
+                    <td>Input text:</td>
+                    <td><textarea id="txtInput" class="colored_ctrl" placeholder="Input"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Output text:</td>
+                    <td><textarea id="txtOutput" class="colored_ctrl" placeholder="Output" readonly></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Command:</td>
+                    <td><input id="txtCmd" type="text" class="colored_ctrl" placeholder="Command" /></td>
+                </tr>
+
+                <tr>
+                    <td><input id="btnSubmit" type="button" value="Submit" onclick="execCmd();" /></td>
+                    <td><input id="btnReset" type="reset" value="Reset" /></td>
+                </tr>
+            </table>
+        </form>
+		
+		<select id="listDemo" multiple></select>
+    </body>
+</html>

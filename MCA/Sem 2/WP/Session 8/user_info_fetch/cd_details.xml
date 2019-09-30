@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<catalog>
+	<cd>
+		<title>Billie Jean</title>
+		<artist>Michael Jackson</artist>
+		<album>Thriller</album>
+		<year>1989</year>
+	</cd>
+
+	<cd>
+		<title>S0001</title>
+		<artist>Kishore Kumar</artist>
+		<album>Alb001</album>
+		<year>1882</year>
+	</cd>
+</catalog>

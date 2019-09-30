@@ -1,0 +1,10 @@
+	:: New changes to s ::
+- support for setting properties: editor & error_color_code
+- support for all ASCII 16 colors
+- Showing proper messages for a property setting
+- unsetting variables
+- error msg color support
+- support for 'src/'
+- alias cm is now b
+- minor mod in alias r
+- unaliasing non-alias wont show an err msg now

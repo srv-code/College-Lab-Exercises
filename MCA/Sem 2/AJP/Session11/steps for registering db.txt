@@ -1,0 +1,4 @@
+Computer > Properties > Control Panel Home (link) > Administrative Tools > ODBC Data Sources (provide password if asked) 
+	> new window (ODBC Data Source Administrator) > (tab) User DSN > (Add) Microsoft Access Driver (*.mdn, *.accdb) > (click button) Finish 
+	> (fill database name) Data Source Name > (press button) Select 'Drives' & 'Directories' fields 
+	> (select database from listbox) > (press button) OK > (press button) OK

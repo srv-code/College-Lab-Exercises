@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>-----</title>
+		<style type="text/css">
+			body {
+				text-align: center;
+				vertical-align: middle;
+				font-size: large;
+				font-weight: bold;
+			}
+		
+			.box_a {
+				background-color: red;
+				// float: left;
+			}
+			
+			.box_b {
+				background-color: green;
+				// float: right;
+			}
+			
+			.box_c {
+				background-color: blue;
+				// float: left;
+			}
+			
+			.box_d {
+				background-color: yellow;
+				text-decoration: none;
+				// float: right;
+			}
+			
+			td {
+				padding: 5em;
+				width: 25%;
+				height: 25%;
+			}
+			
+			img {
+				// border-radius: 5px;
+				// border: 1px solid blue;
+				height: 100px;
+				width: 100px;
+			}
+			
+			img:hover {
+				//border: 5px solid purple;
+				// height: 230px;
+				// width: 230px;
+			}
+			
+			.no_bullets {
+				list-style: none;
+			}
+			
+			.underline_li {
+				text-decoration: underline;
+			}
+			
+			
+			#hlink_li1:visited {
+				color: green;
+			}
+			
+			#hlink_li1:active {
+				color: green;
+			}
+			
+			#hlink_li1:vlink {
+				color: green;
+			}
+			
+			a:visited {
+				color: green;
+			}
+			
+			a:active {
+				color: green;
+			}
+			
+			a:vlink {
+				color: green;
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body ailgn="center">
+		<table>
+			<tr>
+				<td class="box_a">
+					<ul>
+						<li><a target="_blank" href="img/a.jpg"><img src="img/a.jpg" alt="Image 1" /></a></li>
+						<li><a target="_blank" href="img/b.jpg"><img src="img/b.jpg" alt="Image 2" /></a></li>
+						<li><a target="_blank" href="img/c.jpg"><img src="img/c.jpg" alt="Image 3" /></a></li>						
+					</ul>
+				</td>
+				<td class="box_b">
+					<ul>
+						<li class="no_bullets">Item 1</li>
+						<li class="no_bullets">Item 2</li>
+						<li class="no_bullets">Item 3</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="box_c">
+					<ul>
+						<li class="underline_li">Item 1</li>
+						<li class="underline_li">Item 2</li>
+						<li class="underline_li">Item 3</li>
+					</ul>
+				</td>
+				<td class="box_d">
+					<ul>
+						<li><a href="#">Item 0</a></li>
+						<li><a id="hlink_li1" href="#">Item 1</a></li>
+						<li><a id="hlink_li2" href="#">Item 2</a></li>
+						<li><a id="hlink_li3" href="#">Item 3</a></li>
+					</ul>
+				</td>
+			</tr>			
+		</table>
+	</body>
+</html>

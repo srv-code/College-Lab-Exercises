@@ -1,0 +1,57 @@
+﻿body {
+    background-color: silver;
+    font-size: small;
+    font-family: Arial;
+}
+
+.success {
+    font-size: x-large;
+    color: blue;
+    font-weight: bolder;
+}
+    
+
+.invalid {
+    color: Red;
+    font-weight: bolder;
+    // border: 1px solid red;
+    // padding-left: 2px;
+    // padding-right: 2px;
+}
+
+.main_heading {
+    margin: 5px 5px;
+    border: 1px solid blue;
+    font-size: x-large;
+    text-align: center;
+    padding: 5px 5px;
+    background-color: lightblue;
+}
+
+.output {
+    border: 1px solid blue;
+    padding: 5px;
+    height: 200px;
+    width: 500px;
+}
+
+.error {
+    margin-top: 10px;
+    border: 1px solid red;
+    color: red;
+    font-weight: bold;
+}
+
+.logo {
+    text-align: center;
+    margin: 10px;
+}
+
+.section {
+    margin: 10px 5px;    
+}
+
+.sub_heading {
+    margin-bottom: 5px;
+    text-decoration: underline;
+}

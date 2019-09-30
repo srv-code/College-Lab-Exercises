@@ -1,0 +1,153 @@
+#include <stdio.h>
+#include "../../../../stack.c"
+
+#define MAX_EXP_LEN 20
+
+const int DEBUG_ENABLED = 1; // DEBUG
+
+
+int main() 
+{
+	char infix_exp[MAX_EXP_LEN], *postfix_exp;
+	
+	printf("Infix expression:    ");
+	scanf("%s", &infix_exp);
+	postfix_exp = conv_exp(infix_exp);
+	printf("Postfix expression:  %s \n", postfix_exp);
+
+	return 0;
+}
+
+char* conv_exp(const char iexp[]) 
+{
+	int len;
+	for(len = 0; len < MAX_EXP_LEN && iexp[len] != 0; len++);
+	int new_len = len + 2, new_exp[new_len], pexp[len+1], i, j;
+	
+	new_exp[0] = '(';
+	new_exp[new_len-1] = ')';
+	
+	// copy from original expression array
+	for(i=0; i<len; i++)
+		new_exp[i+1] = iexp[i];
+	
+	if(DEBUG_ENABLED) {
+		printf("  [len=%d, new_len=%d] \n", len, new_len);
+		printf("  [Printing new_exp...] \n");
+		for(i=0; i<new_len; i++)
+			printf("  [new_exp[%d]='%c' (%d)] \n", i, new_exp[i], new_exp[i]);
+	}
+	
+	stack s;
+	
+	if(init_stack(&s, new_len) == -1) {
+		printf("Error: Cannot init stack! (Reason: Crossing length limit) \n");
+		exit(-1);
+	}
+		
+	char c, x;
+	for(i=0, j=0; i<len; i++) {
+		c = new_exp[i];
+		switch(c) {
+			case '(' : 
+					err_if_stack_full(s);
+					push_to_stack(&s, c);
+					
+					break;
+					
+			case ')' : 
+					// pop all until '(' is found
+					if(DEBUG_ENABLED)
+						printf("  [')' found, adding all until '(']... \n");
+					
+					err_if_stack_empty(s);
+					while((x=pop_from_stack(&s)) != '(') {
+						if(DEBUG_ENABLED)
+							printf("    [Adding '%c' to postfix exp] \n", c);
+						
+						pexp[j++] = x;
+						err_if_stack_empty(s);
+					}
+					
+					break;
+					
+			case '+' :
+			case '-' :			
+					while((x=peek_in_stack(s)) != '(') {
+						if(DEBUG_ENABLED)
+							printf("    [Current op is same or lower {curr=%c,stack=%c}, adding to postfix exp] \n", c, x);
+							
+						pop_from_stack(&s); // discarding the peeked value
+						pexp[j++] = x;
+					}
+					
+					break;
+					
+			case '*' :
+			case '/' :			
+					while((x=peek_in_stack(s)) != '(') {
+						if(x == '+' || x == '-') { // lower op next, push curr op to stack
+							if(DEBUG_ENABLED)
+								printf("  [Current op is higher {curr=%c,stack=%c}, pushing to stack...] \n", c, x);
+								
+							push_to_stack(&s, c);
+							break;
+						}
+							
+						if(DEBUG_ENABLED)
+								printf("  [Current op is similar {curr=%c,stack=%c}, adding to postfix exp...] \n", c, x);
+								
+						// same op next i.e. * or / , add to postfix exp
+						pop_from_stack(&s); // discarding the peeked value
+						pexp[j++] = c;
+					}
+				
+					break;
+					
+			default: // have to be an operand
+				// check if a valid operand [a-z, A-Z, 0-9]
+				if(! (c>='a' && c<='z') || (c>='A' && c<='Z') || (c>='0' && c<='9') ) {
+					printf("Error: Invalid operand: '%c' \n", c);
+					printf("Infix expression: %s \n", iexp);
+					printf("                  \n");
+					for(j=0; j<i; j++)
+						printf(" ");
+					printf("^ \n");
+					exit(-1);
+				}
+			
+				if(DEBUG_ENABLED)
+					printf("  [Adding operand '%c' to postfix exp] \n", c);
+				
+				pexp[j++] = c;
+		}		
+	}
+	
+	pexp[len] = 0;
+	
+	return pexp;
+}
+
+void err_if_stack_full(const stack s) { check_err_in_stack_contents(s, 2); }
+void err_if_stack_not_empty(const stack s) { check_err_in_stack_contents(s, 0); }
+void err_if_stack_empty(const stack s)  { check_err_in_stack_contents(s, 1); }
+
+void check_err_in_stack_contents(const stack s, const int empty_reqd)
+{
+	if(is_stack_empty(s) == empty_reqd) {
+		if(empty_reqd == 2) {
+			if(is_stack_full(s)) {
+				printf("Error: Cannot evaluate! (Reason: Stack is full) \n");
+			}
+		} else {
+			printf("Invalid exp! [Reason: %s elements in stack] \n", empty_reqd ? "Lesser" : "More");
+		}
+		
+		if(!empty_reqd)
+			if(DEBUG_ENABLED) {
+				printf("Stack contents: \n");
+				display_stack(s);
+			}
+		exit(-1);
+	}
+}

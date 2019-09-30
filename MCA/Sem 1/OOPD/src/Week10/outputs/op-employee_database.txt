@@ -1,0 +1,43 @@
+Case- Normal run:
+	Enter employee details:
+	  Name:  Sourav
+	  Designation:  CEO
+	  Department name:  Mgmt
+	  Basic salary:  250000
+	  Employee ID:  1
+
+	Enter another employee details? [y for yes]:  y
+	Enter employee details:
+	  Name:  Utsav
+	  Designation:  Acctnt
+	  Department name:  Accounts
+	  Basic salary:  25000
+	  Employee ID:  2
+
+	Enter another employee details? [y for yes]:  n
+
+	Enter employee ID to print salary details for:  2
+	Salary slip:
+	  Employee ID:  2
+	  Name:  Utsav
+	  Department name:  Accounts
+	  Designation:  Acctnt
+	  Basic pay:  Rs. 25000
+	  Dearness allowance:  Rs. 5000
+	  House rent allowance:  Rs. 3750
+	  Income tax:  Rs. 3000
+	  Gross pay:  Rs. 33750
+	  Net pay:  Rs. 30750
+  
+Case- Providing invalid employee ID:
+	Enter employee details:
+	  Name:  Sourav
+	  Designation:  CEO
+	  Department name:  Mgmt
+	  Basic salary:  250000
+	  Employee ID:  1
+
+	Enter another employee details? [y for yes]:  n
+
+	Enter employee ID to print salary details for:  2
+	Error: Employee not found!

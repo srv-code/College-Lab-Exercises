@@ -1,0 +1,41 @@
+<html>
+	<script type="text/javascript">
+		window.onload = function() {
+			console.log('script loaded at %o', new Date());
+			document.forms['myform']['name'].focus();
+			// document.getElementById('name').focus();
+		};
+
+		function giveFalse() {
+			return false;
+		}
+
+		function giveTrue() {
+			return true;
+		}
+
+		function testAffirm(txt) {
+			return txt !== '';
+		}
+
+		function testNegate(txt) {
+			return txt === '';
+		}
+
+		function check(form) {
+			with(form) {
+				var retval =	testAffirm(name.value) 
+							&&	giveFalse();
+							// &&	testAffirm(name.value);
+
+				console.log('returning %o', retval);
+				return retval;
+			}
+		}
+	</script>
+
+	<form id="myform" method="post" action="" onsubmit="return check(this);">
+		<input type="text" id="name" name="name" placeholder="Name" /> <br/>
+		<input type="submit" id="btnSubmit" value="Submit" />
+	</form>
+</html>

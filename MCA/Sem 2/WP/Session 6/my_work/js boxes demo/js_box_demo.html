@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<head>
+			<title>Javascript box demo</title>
+		</head>
+		<script>
+			function showAlertBox() {
+				alert("This is an alert box!");
+			}
+			
+			function showPromptBox() {
+				var response = prompt("This is a prompt box", "Your response");
+				document.write("You entered: " + response);
+			}
+			
+			function showConfirmBox() {
+				var response=confirm('This is a confirm box. Enter your choice:');
+				if(response == true) {
+					document.write("You pressed OK");
+				} else {
+					document.write("You pressed Cancel");
+				}
+			}
+		</script>
+	</head>
+	<body style="text-align: center;">
+		<input type="button" value="Show dialog box" onclick="showAlertBox();" /> <br/>
+		<input type="button" value="Show prompt box" onclick="showPromptBox();" /> <br/>
+		<input type="button" value="Show confirm box" onclick="showConfirmBox();" /> <br/>
+	</body>
+</html>

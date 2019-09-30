@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Open pages from dropdown box</title>
+		<script type="text/javascript">
+			function openPage() {
+				var pageURL = document.getElementById('dd_pages').value;
+				if(pageURL != 'select')
+					window.open(pageURL, '_blank');
+			}
+		</script>
+	</head>
+	<body style="text-align: center;">
+		<select id="dd_pages" type="dropdown" onchange="openPage();">
+			<option value="select">Select page</option>
+			<option value="page_1.html">Page 1</option>
+			<option value="page_2.html">Page 2</option>
+			<option value="page_3.html">Page 3</option>
+		</select>
+	</body>
+</html>

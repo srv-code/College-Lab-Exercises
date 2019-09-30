@@ -1,0 +1,48 @@
+Cereals1 <- read.csv("D:/180970054/09-8-19/Cereals1.csv")
+View(Cereals1)
+
+1) Tabulate the following attributes: mfr, and type of cereals.
+> table(Cereals1$mfr,Cereals1$type)
+   
+     C  H
+  A  0  1
+  G 22  0
+  K 23  0
+  N  4  1
+  P  9  0
+  Q  7  1
+  R  8  0
+
+2) Display the 5 number summary for all nutritional attributes starting from calories to vitamins.
+Note: A value of -1 in nutrients indicates a missing observation.
+> summary((subset(Cereals1,select = calories:vitamins)))
+    calories        protein           fat            sodium          fiber            carbo           sugars          potass          vitamins     
+ Min.   : 50.0   Min.   :1.000   Min.   :0.000   Min.   :  0.0   Min.   : 0.000   Min.   : 7.00   Min.   : 0.00   Min.   : 15.00   Min.   :  0.00  
+ 1st Qu.:100.0   1st Qu.:2.000   1st Qu.:0.000   1st Qu.:132.5   1st Qu.: 0.750   1st Qu.:12.00   1st Qu.: 3.00   1st Qu.: 43.75   1st Qu.: 25.00  
+ Median :110.0   Median :2.500   Median :1.000   Median :180.0   Median : 1.750   Median :14.97   Median : 7.00   Median : 90.00   Median : 25.00  
+ Mean   :107.2   Mean   :2.526   Mean   :1.013   Mean   :160.1   Mean   : 2.049   Mean   :14.93   Mean   : 7.04   Mean   : 96.22   Mean   : 28.29  
+ 3rd Qu.:110.0   3rd Qu.:3.000   3rd Qu.:2.000   3rd Qu.:212.5   3rd Qu.: 3.000   3rd Qu.:17.00   3rd Qu.:11.00   3rd Qu.:120.00   3rd Qu.: 25.00  
+ Max.   :160.0   Max.   :6.000   Max.   :5.000   Max.   :320.0   Max.   :14.000   Max.   :23.00   Max.   :15.00   Max.   :330.00   Max.   :100.00 
+ 
+3) For missing values find and replace with arithmetic mean of the attributes.
+> min(Cereals1$potass)
+[1] -1
+> Cereals1$potass[Cereals1$potass==-1]=mean(Cereals1$potass[Cereals1$potass!=-1])
+> min(Cereals1$potass)
+[1] 15
+> 
+
+> min(Cereals1$carbo)
+[1] -1
+> Cereals1$carbo[Cereals1$carbo==-1]=mean(Cereals1$carbo[Cereals1$carbo!=-1])
+> min(Cereals1$carbo)
+[1] 7
+
+> min(Cereals1$sugars)
+[1] -1
+> Cereals1$sugars[Cereals1$sugars==-1]=mean(Cereals1$sugars[Cereals1$sugars!=-1])
+> 
+> min(Cereals1$sugars)
+[1] 0
+
+4) Find and replace outliers with median.

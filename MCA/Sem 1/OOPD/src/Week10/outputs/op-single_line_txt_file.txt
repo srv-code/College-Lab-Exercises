@@ -1,0 +1,13 @@
+Enter a file name:  file.txt
+
+Enter a single line to write into file:  SourAv%20Dey.
+Line written to file successfully.
+
+File contents:  SourAv%20Dey.
+
+Inverting character cases in file...
+File updated with case-inverted line successfully.
+
+New file contents: sOURaV%20dEY.
+
+Count of 'a' in file:  1

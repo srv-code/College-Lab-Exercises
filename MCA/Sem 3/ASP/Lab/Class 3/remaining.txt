@@ -1,0 +1,3 @@
+Incompletes/Fixes/Improvements:
+	* Page: StationaryItemsBilling.aspx, Control ID: Label_Error, Problem Statement: Cannot make style changes using error CSS class in ~/Styles/custom.css
+	* Page: CandidateRegistration.aspx, Control ID: Button_Reset, Problem Statement: Cannot reset without post the form which requires validation of input fields.

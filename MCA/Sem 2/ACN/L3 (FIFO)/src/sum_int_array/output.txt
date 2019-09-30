@@ -1,0 +1,8 @@
+[Client started] 
+Enter array size:  4
+  Element  1:  2
+  Element  2:  5
+  Element  3:  1
+  Element  4:  3
+Summation:  11 
+

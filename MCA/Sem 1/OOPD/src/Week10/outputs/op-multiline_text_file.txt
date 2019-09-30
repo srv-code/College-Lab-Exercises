@@ -1,0 +1,21 @@
+Enter file name:  file5.txt
+
+Enter lines of texts. Press Ctrl-D to stop.
+Hi! This is Sourav Dey.
+Nice to meet you.
+Have a nice day ahead...
+
+
+File contents:
+Hi! This is Sourav Dey.
+Nice to meet you.
+Have a nice day ahead...
+
+
+Summary:
+        Total chars:  67
+        Total alphabets:  47
+        Total digits:  0
+        Total digits:  0
+        Total lines:  4
+        Total spaces:  14

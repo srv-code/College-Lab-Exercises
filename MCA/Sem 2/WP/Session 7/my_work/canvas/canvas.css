@@ -1,0 +1,19 @@
+body {
+	text-align: center;
+}
+
+#main_canvas {
+	border: 1px solid blue;
+}
+
+.display_panel {
+	width: 25%;
+	border-width: 0px;
+	background-color: red;
+	text-align: center;
+	color: yellow;
+}
+
+.invisible {
+	visibility: hidden;
+}

@@ -1,0 +1,28 @@
+Write: syntax, arguments, description
+
+Statistical functions:
+	Mean 
+	Median
+	Min
+	Max 
+	Var 
+	Summary 
+	Hist 
+	Table 
+	Boxplot 
+	Plot 
+	Xtabs()
+
+Data related commands: 
+	read.csv()	
+	read.xls() // requires some additional packages to be installed to get it work 
+	library() 
+	data()
+	view()
+	str()
+	require() 
+	dim() 
+	length() 
+	names() 
+	head() 
+	

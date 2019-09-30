@@ -1,0 +1,26 @@
+.heading {
+    background-color: lightblue;
+    text-align: center;
+    font-size: x-large;
+    border: 1px solid blue;
+    padding: 5px 5px;
+    margin: 10px 10px;  
+}
+
+.sub-heading {
+    margin-top: 10px;    
+}
+
+.result {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 40%;
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+.list {
+    width: 200px;
+    // height: 100px;
+}

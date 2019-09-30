@@ -1,0 +1,65 @@
+SQL> 
+SQL> 
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Courses.sql"
+
+Table created.
+
+SQL> desc students
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SID                                       NOT NULL CHAR(9)
+ NAME                                      NOT NULL VARCHAR2(25)
+ AGE                                                NUMBER(2)
+ EMAIL                                              VARCHAR2(10)
+
+SQL> desc courses
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ C_NAME                                    NOT NULL VARCHAR2(25)
+ CREADITS                                           NUMBER(2)
+ DURATION                                           NUMBER(2)
+
+SQL> desc enrollment
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SID                                       NOT NULL CHAR(9)
+ CNO                                       NOT NULL VARCHAR2(7)
+ YEAR                                      NOT NULL NUMBER(2)
+ GRADE                                              CHAR(2)
+
+SQL> drop table enrollment;
+
+Table dropped.
+
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Enrollment.sql"
+	CNo varchar2 (9) References Courses(CID),
+	                                    *
+ERROR at line 4:
+ORA-00904: "CID": invalid identifier 
+
+
+SQL> desc Courses
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ C_NAME                                    NOT NULL VARCHAR2(25)
+ CREADITS                                           NUMBER(2)
+ DURATION                                           NUMBER(2)
+
+SQL> drop table courses
+  2  ;
+
+Table dropped.
+
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Courses.sql"
+
+Table created.
+
+SQL> @ "c:\users\mca\desktop\adbms096\projects\Enrollment.sql"
+
+Table created.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> spool off

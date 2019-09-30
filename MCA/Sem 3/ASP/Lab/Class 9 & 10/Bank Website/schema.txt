@@ -1,0 +1,5 @@
+Branch: name, city, assets
+Customer: id, name, street, city
+Borrower: {Customer.id, Branch.name, Loan.number}
+Loan: number, amount, {Branch.name, Customer.id}
+Payment: number, Loan.number, date, amount

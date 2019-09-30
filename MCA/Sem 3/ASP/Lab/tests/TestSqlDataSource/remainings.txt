@@ -1,0 +1,2 @@
+* Do validation also
+* Test using InsertParameters and direct sql command execution

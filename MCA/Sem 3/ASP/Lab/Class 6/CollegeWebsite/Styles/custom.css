@@ -1,0 +1,26 @@
+﻿html {
+	background-color: silver;	
+}
+
+.tabs {
+	position: relative;
+	top: 1px;
+	left: 10px;
+}
+	
+.tab {
+	border: 1px solid black;
+	padding: 2px 10px;
+	background-color: #EEEEEE;
+}
+	
+.selected_tab {
+	border-bottom: 1px solid white;
+	background-color: white;
+}
+
+.contents {
+	border: 1px black;
+	background-color: white;
+	padding: 10px;
+}

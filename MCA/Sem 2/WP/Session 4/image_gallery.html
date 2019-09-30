@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Image Gallery</title>
+		<style>
+			body {
+				text-align: center;
+				vertical-align: middle;
+			}
+			
+			#image_div {
+				background-color: lightblue;
+				// height: 500px;
+				border-radius: 5px;
+				padding: 15%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			li {
+				display: inline-block;
+				list-style: none;
+			}
+			
+			img {
+				border-radius: 5px;
+				border: 1px solid blue;
+				height: 200px;
+				width: 200px;
+			}
+			
+			img:hover {
+				border: 5px solid purple;
+				// height: 230px;
+				// width: 230px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="image_div">
+			<ul>
+				<li><a target="_blank" href="img_a.html"><img src="img/a.jpg" alt="Image 1" /></a></li>
+				<li><a target="_blank" href="img_b.html"><img src="img/b.jpg" alt="Image 2" /></a></li>
+				<li><a target="_blank" href="img_c.html"><img src="img/c.jpg" alt="Image 3" /></a></li>
+				<li><a target="_blank" href="img_d.html"><img src="img/d.jpg" alt="Image 4" /></a></li>
+			</ul>
+		</div>		
+	</body>
+</html>

@@ -1,0 +1,30 @@
+﻿body {
+	background-color: white;
+}
+
+.err {
+	color: red;
+	border: 1px solid red; 
+	padding: 10px;
+	margin: 10px;
+}
+
+.header {
+	border: 1px solid blue;
+	background-color: lightblue;
+	font-weight: bolder;
+	font-size: larger;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+}
+
+.form {	
+	background-color: silver;
+	font-family: 'Verdana';
+	font-size: small;
+	border: 1px solid blue;
+	margin-top: 20px;
+	box-shadow: 10px darkgray;
+	padding: 20px;
+}

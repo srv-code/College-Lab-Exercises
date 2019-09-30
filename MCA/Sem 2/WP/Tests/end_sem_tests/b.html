@@ -1,0 +1,35 @@
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="a.css" />
+		<script>
+			var body;
+			window.onload = function() {
+				body = document.getElementsByTagName("body")[0];
+				console.log('body=', body);
+			};
+
+			function daymode() {
+				console.log('daymode');
+				// body.className = 'daymode';
+				body.style.color='black';
+				body.style.backgroundColor='white';
+			}
+
+			function nightmode() {
+				console.log('nightmode');
+				// body.className = 'nightmode';
+				body.style.color='white';
+				body.style.backgroundColor='black';
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" onclick="daymode();" value="Day mode" />
+		<input type="button" onclick="nightmode();" value="Night mode" />
+		<p>
+			This are some text. This are some text. This are some text. This are some text. <br>
+			This are some text. This are some text. This are some text. This are some text. <br>
+			This are some text. This are some text. This are some text. This are some text. <br>
+		</p>
+	</body>
+</html>

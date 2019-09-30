@@ -1,0 +1,94 @@
+Meta Info:
+	Dataset: Book.csv
+	Columns: ...
+	There are total of 200 instances.
+	Data type of all columns: Numeric
+	
+Preprocessing steps:
+	Changed the numeric data types of the columns to nominal.
+	
+Question and answers:
+	Q1. Find the top 5 association rules using the Apropri algo and lift of atleast 1
+	Sol:
+		FPGrowth found 7 rules (displaying top 5)
+		1. [GeogBks=1]: 60 ==> [CookBks=1]: 46   <conf:(0.77)> lift:(1.67) lev:(0.09) conv:(2.16) 
+		2. [ArtBks=1]: 53 ==> [CookBks=1]: 40   <conf:(0.75)> lift:(1.64) lev:(0.08) conv:(2.04) 
+		3. [DoItYBks=1]: 65 ==> [ChildBks=1]: 49   <conf:(0.75)> lift:(1.64) lev:(0.1) conv:(2.06) 
+		4. [GeogBks=1]: 60 ==> [ChildBks=1]: 45   <conf:(0.75)> lift:(1.63) lev:(0.09) conv:(2.03) 
+		5. [RefBks=1]: 54 ==> [CookBks=1]: 40   <conf:(0.74)> lift:(1.61) lev:(0.08) conv:(1.94) 
+	
+	Q2. Find the top 5 association rules using the FPG algo and conf of atleast 0.7
+	Sol:
+		FPGrowth found 7 rules (displaying top 5)
+		1. [GeogBks=1]: 60 ==> [CookBks=1]: 46   <conf:(0.77)> lift:(1.67) lev:(0.09) conv:(2.16) 
+		2. [ArtBks=1]: 53 ==> [CookBks=1]: 40   <conf:(0.75)> lift:(1.64) lev:(0.08) conv:(2.04) 
+		3. [DoItYBks=1]: 65 ==> [ChildBks=1]: 49   <conf:(0.75)> lift:(1.64) lev:(0.1) conv:(2.06) 
+		4. [GeogBks=1]: 60 ==> [ChildBks=1]: 45   <conf:(0.75)> lift:(1.63) lev:(0.09) conv:(2.03) 
+		5. [RefBks=1]: 54 ==> [CookBks=1]: 40   <conf:(0.74)> lift:(1.61) lev:(0.08) conv:(1.94) 
+	
+	Q3. Find all association rules of Cook books on the RHS of the rule with a min conf of atleast 0.6
+	Sol:
+		Best rules found:
+		 1. ChildBks=1 DoItYBks=1 ArtBks=1 26 ==> CookBks=1 24    conf:(0.92)
+		 2. YouthBks=1 ArtBks=1 22 ==> CookBks=1 20    conf:(0.91)
+		 3. DoItYBks=1 ArtBks=1 30 ==> CookBks=1 27    conf:(0.9)
+		 4. DoItYBks=1 GeogBks=1 30 ==> CookBks=1 27    conf:(0.9)
+		 5. ChildBks=1 DoItYBks=1 GeogBks=1 25 ==> CookBks=1 22    conf:(0.88)
+		 6. ArtBks=1 GeogBks=1 30 ==> CookBks=1 26    conf:(0.87)
+		 7. ChildBks=1 DoItYBks=1 RefBks=1 26 ==> CookBks=1 22    conf:(0.85)
+		 8. ChildBks=1 ArtBks=1 GeogBks=1 26 ==> CookBks=1 22    conf:(0.85)
+		 9. DoItYBks=1 RefBks=1 33 ==> CookBks=1 27    conf:(0.82)
+		10. ChildBks=1 ArtBks=1 38 ==> CookBks=1 31    conf:(0.82)
+		11. YouthBks=1 DoItYBks=1 26 ==> CookBks=1 21    conf:(0.81)
+		12. RefBks=1 GeogBks=1 26 ==> CookBks=1 21    conf:(0.81)
+		13. ChildBks=1 RefBks=1 36 ==> CookBks=1 29    conf:(0.81)
+		14. YouthBks=1 RefBks=1 25 ==> CookBks=1 20    conf:(0.8)
+		15. ChildBks=1 DoItYBks=1 49 ==> CookBks=1 39    conf:(0.8)
+		16. YouthBks=1 GeogBks=1 27 ==> CookBks=1 21    conf:(0.78)
+		17. GeogBks=1 60 ==> CookBks=1 46    conf:(0.77)
+		18. ChildBks=1 GeogBks=1 45 ==> CookBks=1 34    conf:(0.76)
+		19. ArtBks=1 53 ==> CookBks=1 40    conf:(0.75)
+		20. RefBks=1 54 ==> CookBks=1 40    conf:(0.74)
+		21. DoItYBks=1 65 ==> CookBks=1 47    conf:(0.72)
+		22. YouthBks=1 54 ==> CookBks=1 36    conf:(0.67)
+		23. ChildBks=1 YouthBks=1 40 ==> CookBks=1 26    conf:(0.65)
+		24. ChildBks=1 92 ==> CookBks=1 54    conf:(0.59)
+		
+		
+	Q4 For the bank dataset, the performed preprocessing find atleast 5 interesting rules with PEP=YES on the RHS  of the rule.
+	
+	
+	Q5 Use the supermarket dataset and perform  the following tasks:
+		1. Split the dataset into 2 dataset, one containing items and another containing depts
+		Sol: Do manually
+		
+		2. For the item dataset, find the most freq dataset ranked by lift
+		Sol:
+			Best rules found:
+				 1. fruit=t 2962 ==> bread and cake=t vegetables=t 1791    conf:(0.6) < lift:(1.22)> lev:(0.07) [319] conv:(1.27)
+				 2. bread and cake=t vegetables=t 2298 ==> fruit=t 1791    conf:(0.78) < lift:(1.22)> lev:(0.07) [319] conv:(1.63)
+				 3. bread and cake=t fruit=t 2325 ==> vegetables=t 1791    conf:(0.77) < lift:(1.2)> lev:(0.07) [303] conv:(1.56)
+				 4. vegetables=t 2961 ==> bread and cake=t fruit=t 1791    conf:(0.6) < lift:(1.2)> lev:(0.07) [303] conv:(1.26)
+				 5. baking needs=t 2795 ==> margarine=t 1645    conf:(0.59) < lift:(1.19)> lev:(0.06) [262] conv:(1.23)
+				 6. margarine=t 2288 ==> baking needs=t 1645    conf:(0.72) < lift:(1.19)> lev:(0.06) [262] conv:(1.41)
+				 7. biscuits=t 2605 ==> frozen foods=t 1810    conf:(0.69) < lift:(1.18)> lev:(0.06) [280] conv:(1.35)
+				 8. frozen foods=t 2717 ==> biscuits=t 1810    conf:(0.67) < lift:(1.18)> lev:(0.06) [280] conv:(1.31)
+				 9. fruit=t 2962 ==> vegetables=t 2207    conf:(0.75) < lift:(1.16)> lev:(0.07) [311] conv:(1.41)
+				10. vegetables=t 2961 ==> fruit=t 2207    conf:(0.75) < lift:(1.16)> lev:(0.07) [311] conv:(1.41)
+		
+		3. Find the top 5 selling items in the dataset
+		Sol:
+			Best rules found:
+				1. biscuits=t 2605 ==> bread and cake=t 2083    conf:(0.8)
+				2. milk-cream=t 2939 ==> bread and cake=t 2337    conf:(0.8)
+				3. fruit=t 2962 ==> bread and cake=t 2325    conf:(0.78)
+				4. baking needs=t 2795 ==> bread and cake=t 2191    conf:(0.78)
+				5. frozen foods=t 2717 ==> bread and cake=t 2129    conf:(0.78)		
+		
+		4. For the topmost selling items, find the association rules with the items on the RHS of the rule
+		Sol:
+			
+		
+		
+		5. find the top 5 association rules for teh dept dataset ranked as per lift
+		6. findt he top 5 association rules with total in the RHS using  the item dataset

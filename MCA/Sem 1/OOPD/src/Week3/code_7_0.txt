@@ -1,0 +1,15 @@
+7.1
+    void value_paramater_func(int a)
+        It uses the passing variable by value method, so the changes made to variable a in this function will be local and won't affect the actual parameters in the main() function of the program. So the value of variable b in main function won't change even after calling func1(int);
+
+    void variable_paramater_func(int &a)
+        It uses the passing variable by reference method, so the changes made to the variable a in this function will also be reflected in the actual variable in the main() function which was being passed while calling the function func2(int&). So the value in variable b changes after calling the func2(int&) function in main() function.
+
+
+7.2
+    variable_parameter_func(int &a)
+    void pointer_paramater_func(int *a)
+    
+    func2(int&) uses pass by reference and func3(int*) uses pass by pointer/address. The main difference between them is that pass by reference acts as an alias to the variable passed from the outside. When a variable is passed by a pointer, the address of the variable is taken and the address to the function is passed. The main difference is that you can pass values without an address (like a number) into a function which takes a const reference, while you can't pass address-less values into a function which takes const pointers.
+
+

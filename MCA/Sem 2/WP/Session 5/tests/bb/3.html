@@ -1,0 +1,26 @@
+<!--Author:Bharat
+Date:08/02/2019
+Creating new browser window-->
+<!Doctype html>
+<html>
+ <head>
+   <title>New Window</title>
+   <script type="text/javascript">
+     function newWindow()
+	 { 
+	  var x=document.getElementById("sel").value;
+	  var wind=window.open(x,"New_Window","width=500px,height=500px");
+	 }
+			
+	</script>
+	</head>
+	
+	<body>
+	 <h3>Select which program to open<h3>
+	<select onchange="newWindow()" id="sel" name="prgms">
+	   
+	   <option value="1.html">Program 1</option>
+	   <option value="2.html">Program 2</option>
+	   
+	</body>
+</html>

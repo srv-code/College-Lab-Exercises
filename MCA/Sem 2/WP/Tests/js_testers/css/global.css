@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    color: blue;
+    /* text-align: center; */
+    font-family: 'Consolas';
+}
+
+#txtMsg {
+    background-color: black;
+    border: 1px green solid;
+    color: yellow;
+    text-align: center;
+    width: 100%;
+}
+
+.colored_ctrl {
+    background-color: brown;
+    color: yellow;
+}
+
+#txtInput, #txtOutput {
+    width:  450px;
+    height: 150px;
+}
+
+#txtCmd {
+    width:  450px;
+}
+
+#txtCmd, #txtInput, #txtOutput {
+    border: 1px inset darkblue;
+    /* border-width: 0px; */
+}
+
+select {
+	background-color: brown;
+	color: yellow;
+	/* display:inline-block; */
+	/* overflow:hidden; */
+	height: 250px;
+}

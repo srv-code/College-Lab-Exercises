@@ -1,0 +1,232 @@
+#!/bin/bash
+
+set_properties() # receives prop-name & prop-val
+{
+	propname=`echo $1 | tr '[:upper:]' '[:lower:]'`
+	case $propname in
+		errcc)
+			color=`echo $2 | tr '[:upper:]' '[:lower:]'`
+			case $color in
+
+				# ASCII Color codes:
+				# Black        0;30     Dark Gray     1;30
+				# Red          0;31     Light Red     1;31
+				# Green        0;32     Light Green   1;32
+				# Brown/Orange 0;33     Yellow        1;33
+				# Blue         0;34     Light Blue    1;34
+				# Purple       0;35     Light Purple  1;35
+				# Cyan         0;36     Light Cyan    1;36
+				# Light Gray   0;37     White         1;37
+				
+				black)
+					error_color_code='\033[0;30m'
+					;;
+				dgray)
+					error_color_code='\033[1;30m'
+					;;
+				red)
+					error_color_code='\033[0;31m'
+					;;
+				lred)
+					error_color_code='\033[1;31m'
+					;;
+				green)
+					error_color_code='\033[0;32m'
+					;;
+				lgreen)
+					error_color_code='\033[1;32m'
+					;;
+				yellow) 
+					error_color_code='\033[1;33m'
+					;;
+				orange) 
+					error_color_code='\033[0;33m'
+					;;
+				blue) 
+					error_color_code='\033[0;34m'
+					;;
+				lblue) 
+					error_color_code='\033[1;34m'
+					;;
+				purple) 
+					error_color_code='\033[0;35m'
+					;;
+				lpurple) 
+					error_color_code='\033[1;35m'
+					;;
+				cyan) 
+					error_color_code='\033[0;36m'
+					;;
+				lcyan) 
+					error_color_code='\033[1;36m'
+					;;
+				lgray) 
+					error_color_code='\033[0;37m'
+					;;
+				white) 
+					error_color_code='\033[1;37m'
+					;;
+					
+				*)
+					echo Error: Invalid color value \($2\)
+					echo "Valid color values:  black   dgray   red     lred"
+					echo "                     green   lgreen  orange  yellow"
+					echo "                     blue    lblue   purple  lpurple"
+					echo "                     cyan    lcyan   lgray   white"
+					return 1
+					;;
+			esac
+			echo Success: Error color set to \'$color\'
+			;;
+			
+		ed) 
+			which $2 >& /dev/null # checking if the editor program exists
+			if [ $? != 0 ]; then
+				echo Error: Editor program \'$2\' not found!
+				return 1
+			fi
+			editor=$2
+			echo Success: Editor program set to \'$2\'
+			;;
+			
+		*)
+			echo Error: Invalid property name \($1\)
+			return 1
+			;;
+	esac
+	echo [done]
+}
+
+unset_vars() # receives cutoff level
+{
+	[ $1 -lt 1 ] && return
+	# echo unset_vars\(\) passed cutoff level 1 # DEBUG
+	
+	# unset editor
+	unset src_fname
+	unset ext
+
+	[ $1 -lt 2 ] && return
+	# echo unset_vars\(\) passed cutoff level 2 # DEBUG
+
+	unset prg_name
+	unset prg_name_len
+	unset start_idx
+
+	[ $1 -lt 3 ] && return
+	# echo unset_vars\(\) passed cutoff level 3 # DEBUG
+	unset compiler
+	unset dir_struct
+
+	[ $1 -lt 100 ] && return
+	# echo unset_vars\(\) passed cutoff level 100 # DEBUG
+
+	# unset error_color_code
+	unset src
+	unset out
+}
+
+show_usage() 
+{
+	echo Usage 1 : For setting aliases : s \<program-source-file-path\>
+	echo Usage 2 : For resetting aliases : s \[-r\|--reset\]
+	echo Usage 3 : For setting properties : s \[-s\|--set\] \<property-name\> \<property-value\> 
+}
+
+if [ $# -eq 0 ]; then
+	show_usage
+	return
+fi	
+
+if [ "$*" == "-r" -o "$*" == "--reset" ]; then
+	echo Resetting...
+
+	unset_vars 100 # clean variable usages
+
+	unalias b    >& /dev/null    # build
+	unalias r    >& /dev/null    # run
+	unalias f    >& /dev/null    # fill
+	unalias e    >& /dev/null    # edit
+	unalias sd   >& /dev/null    # show-developer
+	unalias s    >& /dev/null    # show
+
+	echo [done]
+	return 
+fi
+
+if [ "$1" == "-s" -o "$1" == "--set" ]; then
+	if [ "$2" == "" -o "$3" == "" ]; then
+		show_usage
+		return
+	fi
+
+	set_properties $2 $3
+
+	# [ $? == 0 ] && echo [done]
+	return $?
+fi
+
+### Main ###
+
+echo Setting...
+
+[ -z "$editor" ] && editor='subl' # default value
+[ -z "$error_color_code" ] && error_color_code='\033[0;31m' # default value
+
+src_fname=$1
+ext=`echo $src_fname | tr "." "\n" | tail -1 | tr '[:upper:]' '[:lower:]'`	
+# printf "  [ext='%s'] \n" $ext # DEBUG
+
+if [ "$ext" == "c" ]; then
+	compiler="gcc"
+elif [ "$ext" == "cpp" ]; then
+	compiler="g++"
+else 
+	printf "Unsupported file extension found (%s)! \n" "$ext"
+	unset_vars 3 # clean variable usages
+	return
+fi
+
+prg_name=`echo $src_fname | tr "/" "\n" | tail -1 | tr "." "\n" | head -1`
+# printf "  [prg_name='%s'] \n" $prg_name # DEBUG
+
+prg_name_len=`expr ${#prg_name} + ${#ext} + 1`
+# printf "  [src filename='%s' (len=%d)] \n" $prg_name.$ext $prg_name_len # DEBUG
+
+if [ `echo ${src_fname:0:4} | tr '[:upper:]' '[:lower:]'` == 'src/' ]; then	
+	start_idx=4
+else 
+	start_idx=0
+fi
+# printf "  [start_idx=%d] \n" $start_idx # DEBUG
+
+dir_struct=${src_fname:$start_idx:`expr ${#src_fname} - $prg_name_len - $start_idx`}
+# printf "  [dir_struct='%s'] \n" $dir_struct # DEBUG
+
+[ ! -d out/$dir_struct ] && mkdir -vp out/$dir_struct
+
+src="$src_fname"
+out=out/"$dir_struct""$prg_name".out
+
+[ $start_idx -eq 4 ] && dir_struct=src/$dir_struct
+[ ! -d  $dir_struct ] && mkdir -vp $dir_struct
+
+if [ ! -f "$src_fname" ]; then
+	touch "$src_fname"
+	if [ $? != 0 ]; then
+		unset_vars 3 # clean variable usages
+		return
+	fi
+	echo touch: "created new file  '"$src_fname"'"
+fi
+
+alias b='$compiler "$src" -o "$out"' # build
+alias r='b >& /dev/null; [ $? != 0 ] && echo -e "$error_color_code [Compilation failed] \033[0m" || "$out"' # run
+alias f='cat > "$src"' # fill
+alias e='$editor "$src"' # edit
+alias sd='clear; cat -n "$src"; echo' # show-developer
+alias s='clear; cat "$src"; echo' # show
+
+unset_vars 2 # clean variable usages
+
+echo [done]

@@ -1,0 +1,35 @@
+<html>
+    <head>
+		<title>JS Tester Module 2</title>
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+		<script src="js/dispatcher1.js" type="text/javascript"></script>
+		<script src="js/test_fns1.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form>
+            <table>
+				<tr>
+					<td>Options:</td>
+					<td>
+						<select id="listOptions" size="5" tabindex="2"></select>
+					</td>
+				</tr>
+				
+				<tr>
+                    <td>Input text:</td>
+                    <td><textarea id="txtInput" class="colored_ctrl" placeholder="Input" tabindex="3"></textarea></td>
+                </tr>
+				
+				<tr>
+                    <td>Output text:</td>
+                    <td><textarea id="txtOutput" class="colored_ctrl" placeholder="Output" readonly tabindex="5"></textarea></td>
+                </tr>
+				
+				<tr>
+                    <td><input id="btnSubmit" type="button" value="Submit" onClick="execCmd();" tabindex="1"/></td>
+                    <td><input id="btnReset" type="button" value="Reset" tabindex="4" onClick="clearTextBoxes();"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

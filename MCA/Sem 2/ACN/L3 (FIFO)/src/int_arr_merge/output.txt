@@ -1,0 +1,15 @@
+[Client started] 
+Enter count of arrays:  2
+Enter elements of 2 arrays: 
+  Array 1: 
+    Length:  3
+      Element  1:  5
+      Element  2:  11
+      Element  3:  9
+  Array 2: 
+    Length:  2
+      Element  1:  -7
+      Element  2:  8
+
+Resultant merged and sorted array:  -7  5  8  9  11  
+

@@ -1,0 +1,44 @@
+students_details {
+	margin:0.5em;
+	font-family:verdana;
+	display:block;
+}
+
+student {
+	display:block;
+	/* margin-top:5px; */
+	padding:10px;
+	background-color:#AC7545;
+	width:500px;
+	margin: 20px; 
+	border:1px solid blue;
+}
+
+title {
+	display:block;
+	font-weight:bold;
+	text-align:center;
+	font-size:30px;
+	background-color:blue;
+	color:white;
+	/* width:500px; */
+	padding:10px;
+}
+
+register_number,
+s_name,
+s_department,
+s_branch,
+s_year_join,
+s_mail {
+	display:block;
+	text-align:left;
+}
+
+register_number {
+	color:yellow;
+	padding-bottom: 5px;
+	text-decoration:underline;
+	font-weight:bolder;
+	font-size:20px;
+}

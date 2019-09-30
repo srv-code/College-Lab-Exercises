@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Shapes</title>
+		<script src="helper.js" type="text/javascript"></script>
+		<style>
+			body {
+				// overflow:hidden;
+				// padding: 20px;
+			}
+			
+			.shape1 {
+				width: 100px;
+				height: 100px;
+				border: 1px solid black;
+				position: absolute;
+				
+				// -webkit-animation-iteration-count: 1;
+				-webkit-animation-delay: 1s;
+				-webkit-animation-timing-function: linear;
+				-webkit-animation-name: transform_shape;
+				-webkit-animation-duration: 5s;
+				-webkit-animation-fill-mode: forwards;
+			}
+			
+			@-webkit-keyframes transform_shape {
+				0% {
+					top: 10px;
+					left: 10px;
+					border-radius: 0%;
+				}
+				
+				25% {
+					top: 110px;
+					left: 210px;
+					border-radius: 10%;
+				}
+				
+				50% {
+					top: 410px;
+					left: 410px;
+					border-radius: 30%;
+				}
+				
+				100% {
+					top: 510px;
+					left: 910px;
+					border-radius: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div_main">
+			<div id="shape1" class="shape1"></div>
+		</div>
+	</body>
+</html>
