@@ -36,7 +36,7 @@ public partial class _Default : System.Web.UI.Page
         } else {
             Label_OperationStatus.Text = "Failed to insert record (rows=" + nrows + ")!";
             Label_OperationStatus.BackColor = Color.Red;
-			Label_OperationStatus.Text = String.Empty;
+			// Label_OperationStatus.Text = String.Empty;
         }
         Debug.Print("inserted: rows=" + nrows);
     }

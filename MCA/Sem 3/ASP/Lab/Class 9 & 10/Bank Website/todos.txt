@@ -1,0 +1,41 @@
+Caching:
+	DbStrings.dbConnectionString
+
+To Dos:
+	force caching tuple count after a row insertion & deletion
+	fix the Debug.Print syntax also
+	fix the sql and procedureName variables also 
+	capitalize the sql statement keywords
+	create the necessary procedures 
+	create a unified procedure for selecting paged and sorted records for all tables 
+	open all SqlConnection objects before passing to a helper method
+	
+Scenarios:
+	* borrowers table operations:
+		[can: view; cannot: add,edit,delete]
+
+	* payments table operations:
+		[can: view; cannot: add,edit,delete]
+					
+	* loans table operations:
+		[can: view,add,delete; cannot: edit]
+
+		view the records:
+			show only tuples with cleared=false
+
+		borrows a loan:
+			if branch assets is >= amount requested, then
+				deduct the amount from branches.assets by amount requested
+				adds a record in loans table, with cleared=false
+				if no previous entry were made for that customer and branch, then
+					add a row in borrowers table with that customer and branch name
+			else 
+				reject the insertion
+				find a way to communicate the rejectiin message to the UI page controls
+
+		makes loan payment :
+			inscrease the amount of branches.assets by amount requested
+			adds a record in payments table
+			update the corresponding row from loans table with cleared=true
+			if thats the last record for the customer from that branch, then
+				delete the tuple from borrowers for that customer & branch name
