@@ -1,0 +1,7 @@
+[Date: 16-Oct]
+
+1. Use the Iris dataset and split the dataset into 2 parts for training and testing. Ratio: 70-30. Train a classifier model using kNN for k=3. Predict the class labels for the test instances  and tabulate the confusion matrix.
+2. Use the cars dataset and create a linear model to predict  distance based on the speed of 190. Find if there is correlation between speed nand distance and visualize the relationship.
+3. Use the mtcars dataset predict mpg using distance horsepower  and weight. [Hint: Use glm()]
+4. Using the Iris dataset create a classification tree to predict species based on all predictor attributes.
+5. Use the Iris dataset to create 3 clusters of the data usiong the k-means function and visualize the final clusters using group scatter plot.

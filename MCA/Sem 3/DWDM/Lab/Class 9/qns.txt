@@ -1,0 +1,15 @@
+[Date: 09-Oct]
+
+Writing format: 
+	Meta information
+	Steps to follow
+	Results obtained
+
+Questions:
+	1. Using the Iris dataset build a classification tree using J48. Write down the classifier rules derived from the tree, write down the performance of the classifier in terms of accuracy, error rate and class-wise true positive rate.
+	
+	2. Using the diabetes.arff dataset generate a classification tree using J48. Write down the best 3 rules where the class label is tested positive. What is the accuracy of the classifier?
+	
+	3. Using teh contact-lenses.arff dataset compare the accuracy of the Bayesian classifier and the Bayesian belief network.
+	
+	4. Find the class label for the instance where age='young', spectacle-prescrip='myope', astigmatism='YES' and tear_production_rate='NORMAL'. Compare the results obrtained by the 3-nearest neighbour and Bayesian belief network.
