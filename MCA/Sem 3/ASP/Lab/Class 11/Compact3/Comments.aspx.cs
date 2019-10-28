@@ -9,17 +9,19 @@ using System.Diagnostics;
 public partial class Comments : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e) {
-		Response.Write("user: " + Session["ename"].ToString());
+		Response.Write("user: " + Session["ename"]);
     }
 
 	protected void FormView1_DataBound(object sender, EventArgs e) {
 		Session["Iname"] = Convert.ToString(DataBinder.Eval(FormView1.DataItem, "ImageName"));
-
+		
+		/*
 		ControlCollection col = FormView1.Controls;
 		Debug.Print("Controls in FormView1:");
 		for (int i = 0; i < col.Count; i++) {
 			Debug.Print("  [{0}] {1}", i + 1, col[i]);
 		}
+		*/
 
 		ListView ll = (ListView)FormView1.FindControl("ListView1");
 

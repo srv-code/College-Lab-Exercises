@@ -25,9 +25,10 @@ public partial class Login : System.Web.UI.Page
 		sr = MyCommand.ExecuteReader(CommandBehavior.CloseConnection);
 		while (sr.Read()) {
 			if ((sr["ename"].ToString()) == TextBox_Username.Text && (sr["password"].ToString()) == TextBox_Password.Text) {
-				Session["ename"] = TextBox_Username.Text; Response.Redirect("~/Comments.aspx");
+				Session["ename"] = TextBox_Username.Text; 
+				Response.Redirect("~/Comments.aspx");
 			} else {
-				Response.Write("Authentication Failed");
+				Label_Error.Text = "Authentication Failed";
 			}
 		}
 	}

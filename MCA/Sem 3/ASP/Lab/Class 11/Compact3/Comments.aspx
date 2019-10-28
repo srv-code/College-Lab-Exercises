@@ -56,7 +56,7 @@
 			<ItemTemplate>
 				<fieldset>
 					<legend>Comment on the image</legend>
-					<table border="1" >
+					<table border="1">
 						<tr>
 							<td> 
 								<asp:Image ID="Image1" runat="server" 
@@ -67,7 +67,7 @@
 					</table>
 					<asp:ListView ID="ListView1" runat="server" 
 							ItemPlaceholderID="itemplaceholder"
-							InsertItemPosition="FirstItem" Visible="false" >
+							InsertItemPosition="FirstItem" Visible="false">
 						<LayoutTemplate>
 							<asp:PlaceHolder ID="itemplaceholder" runat="server"/>
 						</LayoutTemplate>

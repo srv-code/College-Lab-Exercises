@@ -5,7 +5,7 @@ import java.sql.*;
  * Java Data Base Connectivity
  * 	Testing for database connectivity and displaying 
  * 		the result set from a database table.
-*/
+ */
 /* Accesses MS Access DB: filename=StudentDB.accdb; DB name=StudentDB_096 */
 public class JDBCDemo {
 	public static void main(String[] args) {
