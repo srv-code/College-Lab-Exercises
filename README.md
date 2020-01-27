@@ -1,2 +1,2 @@
 # College-Projects
-Laboratory works of post-graduation.
+College laboratory works in post-graduation.
