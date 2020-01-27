@@ -1,2 +1,2 @@
 # College-Projects
-Lab works in college (under-graduation and post-graduation).
+Laboratory works of post-graduation.
